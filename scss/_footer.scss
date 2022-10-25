@@ -1,0 +1,30 @@
+@mixin p-footer() {
+  font-family: $font-footer;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.188rem;
+  letter-spacing: -0.03rem;
+  color: $black
+}
+
+.footer {
+  @include flex-column-center;
+  align-items: flex-start;
+  gap: 1.2rem;
+  background: $white-footer;
+  height: 94px;
+  padding: 1rem 1.5rem;
+
+  p {
+    @include p-footer;
+  }
+
+  .footer__policies {
+    @include flex-row-between-center;
+    gap: .5rem;
+
+    a {
+      @include p-footer;
+    }
+  }
+}
