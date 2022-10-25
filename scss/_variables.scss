@@ -1,0 +1,38 @@
+//Colors
+//Black
+$black: #222222;
+$black-text: #111111;
+$black-full: #000000;
+
+//Grey
+$grey-text: #777777;
+$grey-border: #858585;
+$grey-shadow: #8B8B8B;
+$grey-menu-dates: #686868;
+$grey-dark: #333333;
+
+//Clear
+$white: #FFFFFF;
+$beige-light: #BEAD8E;
+$beige-dark: #BDAC8D;
+
+//Others
+$red-pale: #DE5777;
+
+//Fonts
+$font-title: 'Old Standard TT', serif;
+$font-text: 'Archivo', sans-serif;
+
+// Mixings
+// Generals
+@mixin flex-row-between-center () {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-column-center () {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
