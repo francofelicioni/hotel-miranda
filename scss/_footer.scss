@@ -4,25 +4,25 @@
   font-size: 1rem;
   line-height: 1.188rem;
   letter-spacing: -0.03rem;
-  color: $black
+  color: $black;
 }
 
 .footer {
-  @include flex-column-center;
-  align-items: flex-start;
   gap: 1.2rem;
   background: $white-footer;
   height: 94px;
   padding: 1rem 1.5rem;
 
-  p {
-    @include p-footer;
+  .footer__copyrigth {
+    padding-bottom: 1rem;
+
+    p {
+      @include p-footer;
+    }
   }
 
   .footer__policies {
     @include flex-row-between-center;
-    gap: .5rem;
-
     a {
       @include p-footer;
     }
