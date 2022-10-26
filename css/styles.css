@@ -64,31 +64,31 @@ body {
     gap: 2rem; }
 
 .main .main__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
   background: #333333;
   color: #ffffff;
   height: 531px;
   align-items: flex-start;
   padding: 2rem 1rem;
   gap: 1rem; }
-  .main .main__container h2 {
+  .main .main__container h3 {
     font-family: "Archivo", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 0.8rem;
     line-height: 18px;
     letter-spacing: 2.8px;
-    padding: 2rem 4rem 0 1rem; }
-  .main .main__container h1 {
+    padding: 2rem 4rem 0 1rem;
+    margin-bottom: 1.5rem; }
+  .main .main__container h2 {
     font-family: "Old Standard TT", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 3.5rem;
     line-height: 60px;
     letter-spacing: -1.2px;
-    padding: 1rem; }
+    padding: 1rem;
+    margin-bottom: 1.5rem; }
   .main .main__container .btn {
     background: #bead8e;
     font-family: "Archivo", sans-serif;
@@ -100,11 +100,8 @@ body {
     letter-spacing: 2.8px;
     padding: 1rem 2rem; }
   .main .main__container .btn-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 4rem 1rem 1rem;
-    gap: 1rem; }
+    display: block;
+    padding: 1rem 4rem 1rem 1rem; }
     .main .main__container .btn-container .btn {
       background: #bead8e;
       font-family: "Archivo", sans-serif;
@@ -114,14 +111,14 @@ body {
       font-size: 0.875rem;
       line-height: 15px;
       letter-spacing: 2.8px;
-      padding: 1rem 2rem; }
+      padding: 1rem 2rem;
+      margin-bottom: 1rem; }
       .main .main__container .btn-container .btn--transparent {
         background: transparent;
         border: 2px solid #ffffff54; }
   .main .main__container--dates {
     background: #222222;
-    height: 354px;
-    justify-content: space-around; }
+    height: 354px; }
     .main .main__container--dates .main__container__date {
       display: flex;
       flex-direction: column;
@@ -152,14 +149,11 @@ body {
         padding: 0;
         margin: 20px auto 0 auto; }
     .main .main__container--dates .btn {
-      margin: 0 0 2rem 0.8rem;
+      margin: 1rem 2rem 0 1rem;
       padding: 1.2rem 1rem; }
 
 .about-us {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-items: flex-start;
+  display: block;
   padding: 1rem; }
   .about-us h3 {
     font-family: "Archivo", sans-serif;
@@ -255,26 +249,23 @@ body {
           color: #ffffff; }
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-items: flex-start;
   gap: 1.2rem;
   background: #f8f8f8;
   height: 94px;
   padding: 1rem 1.5rem; }
-  .footer p {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.188rem;
-    letter-spacing: -0.03rem;
-    color: #222222; }
+  .footer .footer__copyrigth {
+    padding-bottom: 1rem; }
+    .footer .footer__copyrigth p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.188rem;
+      letter-spacing: -0.03rem;
+      color: #222222; }
   .footer .footer__policies {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: .5rem; }
+    align-items: center; }
     .footer .footer__policies a {
       font-family: "Roboto", sans-serif;
       font-weight: 700;
@@ -282,3 +273,82 @@ body {
       line-height: 1.188rem;
       letter-spacing: -0.03rem;
       color: #222222; }
+
+.rooms {
+  position: relative; }
+  .rooms h3 {
+    font-family: "Archivo", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #777777;
+    text-align: center;
+    padding-bottom: 1.5rem; }
+  .rooms h2 {
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+    text-align: center;
+    letter-spacing: -1.2px;
+    color: #222222;
+    padding-bottom: 2rem; }
+  .rooms .room__facilities {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    height: 40px;
+    left: 42px;
+    top: 168px;
+    justify-content: space-around;
+    width: 80%;
+    background: #ffffff;
+    align-self: center;
+    box-shadow: 0px 8px 16px #8b8b8b; }
+  .rooms .slider {
+    height: 244px;
+    background-color: gray; }
+  .rooms .room__information {
+    height: 250px; }
+    .rooms .room__information .room__information__container {
+      height: 215px;
+      width: 90%;
+      background: #ffffff;
+      position: absolute;
+      left: 20px;
+      top: 400px; }
+      .rooms .room__information .room__information__container h4 {
+        font-family: "Old Standard TT", serif;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+        letter-spacing: -1.2px;
+        color: #222222;
+        padding: 1rem 0; }
+      .rooms .room__information .room__information__container p {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        text-align: center;
+        color: #777777;
+        padding: 0 4rem; }
+      .rooms .room__information .room__information__container .room__price {
+        font-family: "Archivo", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.688;
+        text-align: center;
+        color: #bead8e;
+        text-align: center; }
+      .rooms .room__information .room__information__container .room__price--sm {
+        font-size: 1rem; }
