@@ -1,0 +1,94 @@
+.rooms {
+  position: relative;
+  h3 {
+    font-family: $font-text;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: $grey-text;
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-family: $font-title;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+    text-align: center;
+    letter-spacing: -1.2px;
+    color: $black;
+    padding-bottom: 2rem;
+  }
+
+  .room__facilities {
+    @include flex-row-between-center;
+    position: absolute;
+    height: 40px;
+    left: 42px;
+    top: 168px;
+    justify-content: space-around;
+
+    width: 80%;
+    background: $white;
+    align-self: center;
+    box-shadow: 0px 8px 16px $grey-shadow;
+  }
+
+  .slider {
+    height: 244px;
+    background-color: gray;
+  }
+
+  .room__information {
+    height:250px ;
+    .room__information__container {
+      height: 215px;
+      width: 90%;
+      background: $white;
+      position: absolute;
+      left: 20px;
+      top: 400px;
+
+      h4 {
+        font-family: $font-title;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+        letter-spacing: -1.2px;
+        color: $black;
+        padding: 1rem 0;
+      }
+      p {
+        font-family: $font-roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        text-align: center;
+        color: $grey-text;
+        padding: 0 4rem;
+      }
+      .room__price {
+        font-family: $font-text;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.688;
+        text-align: center;
+        color: $beige-light;
+        text-align: center;
+      }
+
+      .room__price--sm {
+        font-size: 1rem;
+      }
+    }
+  }
+}
