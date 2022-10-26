@@ -1,6 +1,6 @@
 .main {
   .main__container {
-    @include flex-column-center;
+    display: block;
     background: $grey-dark;
     color: $white;
     height: 531px;
@@ -16,6 +16,7 @@
       line-height: 18px;
       letter-spacing: 2.8px;
       padding: 2rem 4rem 0 1rem;
+      margin-bottom: 1.5rem;
     }
 
     h1 {
@@ -26,6 +27,7 @@
       line-height: 60px;
       letter-spacing: -1.2px;
       padding: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     .btn {
@@ -33,12 +35,12 @@
     }
 
     .btn-container {
-      @include flex-column-center;
+      display: block;
       padding: 1rem 4rem 1rem 1rem;
-      gap: 1rem;
 
       .btn {
         @include btn;
+        margin-bottom: 1rem;
 
         &--transparent {
           background: transparent;
@@ -50,7 +52,6 @@
     &--dates {
       background: $black;
       height: 354px;
-      justify-content: space-around;
   
       .main__container__date {
         @include flex-column-center;
@@ -88,7 +89,7 @@
       }
   
       .btn {
-        margin: 0 0 2rem 0.8rem;
+        margin: 1rem 2rem 0 1rem;
         padding: 1.2rem 1rem;
       }
     }
