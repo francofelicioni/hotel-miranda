@@ -1,0 +1,112 @@
+.menu {
+  padding-top: 100px;
+  position: relative;
+  .menu-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  h3 {
+    font-family: $font-text;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    padding: 1rem;
+  }
+  h2 {
+    font-family: $font-title;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+    letter-spacing: -1.2px;
+    color: $black;
+    padding: 1rem;
+  }
+
+  .menu__container {
+    .menu_li {
+      @include flex-row-between-center;
+      padding: 1rem;
+
+      .menu_li_img {
+        width: 120px;
+        height: 120px;
+      }
+
+      .menu_li_info {
+        @include flex-column-center;
+        align-items: flex-start;
+        gap: 1rem;
+
+        h4 {
+          font-family: $font-title;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.5rem;
+          line-height: 1.5rem;
+          letter-spacing: -0.72px;
+          color: $black;
+          padding: 0 1rem;
+        }
+
+        p {
+          font-family: $font-roboto;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.875rem;
+          line-height: 1.5rem;
+          color: $black;
+          padding: 0 1rem;
+        }
+      }
+    }
+
+    .menu__navigation {
+      @include flex-row-between-center;
+      padding: 0 1rem;
+      justify-content: flex-end;
+      gap: 1rem;
+      .navigation_item {
+        position: relative;
+        height: 36px;
+        width: 36px;
+        background: $white-footer;
+
+        &--rigth {
+          background: $beige-light;
+          box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.15);
+        }
+
+        img {
+          position: absolute;
+          bottom: 10px;
+          left: 10px;
+          height: 1rem;
+          width: 1rem;
+        }
+      }
+    }
+    .menu_img {
+      margin: 2rem 1rem 0 0;
+      height: 335px;
+      width: 100%;
+      padding: 1rem;
+    }
+
+    .menu__slider-dots {
+      @include slider-dots;
+      padding: 1rem;
+      .dot {
+        @include dot;
+      }
+
+      .active {
+        @include active;
+      }
+    }
+  }
+}
