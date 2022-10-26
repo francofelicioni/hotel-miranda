@@ -1,6 +1,5 @@
 .about-us {
-  @include flex-column-center;
-  align-items: flex-start;
+  display: block;
   padding: 1rem;
 
   h3 {
