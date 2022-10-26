@@ -60,25 +60,15 @@
     }
 
     .facilities__slider-dots {
-        bottom:0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 2rem 0;
-        gap: 10px;
-    
-        .dot {
-            cursor: pointer;
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-            border: none;
-            background-color: $grey-dots;
-        }
+      @include slider-dots;
 
-        .active {
-            background-color: $beige-light;
-        }
+      .dot {
+        @include dot;
+      }
+
+      .active {
+        @include active;
+      }
     }
   }
 }
