@@ -248,32 +248,6 @@ body {
         .about-us .about-us__container .about-us__container__description--black p {
           color: #ffffff; }
 
-.footer {
-  gap: 1.2rem;
-  background: #f8f8f8;
-  height: 94px;
-  padding: 1rem 1.5rem; }
-  .footer .footer__copyrigth {
-    padding-bottom: 1rem; }
-    .footer .footer__copyrigth p {
-      font-family: "Roboto", sans-serif;
-      font-weight: 700;
-      font-size: 1rem;
-      line-height: 1.188rem;
-      letter-spacing: -0.03rem;
-      color: #222222; }
-  .footer .footer__policies {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .footer .footer__policies a {
-      font-family: "Roboto", sans-serif;
-      font-weight: 700;
-      font-size: 1rem;
-      line-height: 1.188rem;
-      letter-spacing: -0.03rem;
-      color: #222222; }
-
 .rooms {
   position: relative; }
   .rooms h3 {
@@ -352,3 +326,75 @@ body {
         text-align: center; }
       .rooms .room__information .room__information__container .room__price--sm {
         font-size: 1rem; }
+
+.intro-video {
+  background: #222222; }
+  .intro-video h3 {
+    font-family: "Archivo", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #bdac8d;
+    text-align: left;
+    padding: 2rem 1rem; }
+  .intro-video h2 {
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+    letter-spacing: -1.2px;
+    color: #ffffff;
+    padding: 0 3rem 0 1rem; }
+  .intro-video p {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #C2C2C2;
+    padding: 1rem 3rem 0 1rem; }
+  .intro-video .intro-video__item {
+    align-self: center;
+    padding: 1rem 1rem 0 1rem; }
+  .intro-video .btn {
+    background: #bead8e;
+    font-family: "Archivo", sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    padding: 1rem 2rem;
+    margin: 1rem 3rem 2rem 1rem; }
+
+.footer {
+  gap: 1.2rem;
+  background: #f8f8f8;
+  height: 94px;
+  padding: 1rem 1.5rem; }
+  .footer .footer__copyrigth {
+    padding-bottom: 1rem; }
+    .footer .footer__copyrigth p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.188rem;
+      letter-spacing: -0.03rem;
+      color: #222222; }
+  .footer .footer__policies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .footer .footer__policies a {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.188rem;
+      letter-spacing: -0.03rem;
+      color: #222222; }
