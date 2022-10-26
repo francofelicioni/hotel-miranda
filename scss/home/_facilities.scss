@@ -1,0 +1,84 @@
+.facilities {
+  h3 {
+    font-family: $font-text;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 0.938rem;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: $grey-text;
+    text-align: center;
+    padding: 2rem;
+  }
+  h2 {
+    font-family: $font-title;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+    letter-spacing: -1.2px;
+    color: $black;
+    text-align: center;
+  }
+
+  .facilities__container {
+    position: relative;
+
+    .facilities__icon {
+      position: absolute;
+      left: 52px;
+      bottom: 235px;
+    }
+
+    .facilities__icon--1 {
+      position: absolute;
+      right: 40px;
+      bottom: 285px;
+    }
+
+    h4 {
+      font-family: $font-title;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.875rem;
+      line-height: 1.875rem;
+      letter-spacing: -0.9px;
+      color: $black;
+      padding: 2rem;
+      margin-top: 160px;
+    }
+
+    p {
+      font-family: $font-text;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      color: $grey-text;
+      padding: 0 5rem 0rem 2rem;
+    }
+
+    .facilities__slider-dots {
+        bottom:0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+        gap: 10px;
+    
+        .dot {
+            cursor: pointer;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            border: none;
+            background-color: $grey-dots;
+        }
+
+        .active {
+            background-color: $beige-light;
+        }
+    }
+  }
+}

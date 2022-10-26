@@ -373,6 +373,73 @@ body {
     padding: 1rem 2rem;
     margin: 1rem 3rem 2rem 1rem; }
 
+.facilities h3 {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 0.938rem;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #777777;
+  text-align: center;
+  padding: 2rem; }
+
+.facilities h2 {
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -1.2px;
+  color: #222222;
+  text-align: center; }
+
+.facilities .facilities__container {
+  position: relative; }
+  .facilities .facilities__container .facilities__icon {
+    position: absolute;
+    left: 52px;
+    bottom: 235px; }
+  .facilities .facilities__container .facilities__icon--1 {
+    position: absolute;
+    right: 40px;
+    bottom: 285px; }
+  .facilities .facilities__container h4 {
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 1.875rem;
+    letter-spacing: -0.9px;
+    color: #222222;
+    padding: 2rem;
+    margin-top: 160px; }
+  .facilities .facilities__container p {
+    font-family: "Archivo", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #777777;
+    padding: 0 5rem 0rem 2rem; }
+  .facilities .facilities__container .facilities__slider-dots {
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    gap: 10px; }
+    .facilities .facilities__container .facilities__slider-dots .dot {
+      cursor: pointer;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      border: none;
+      background-color: #EDEDED; }
+    .facilities .facilities__container .facilities__slider-dots .active {
+      background-color: #bead8e; }
+
 .footer {
   gap: 1.2rem;
   background: #f8f8f8;

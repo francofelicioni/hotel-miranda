@@ -1,8 +1,9 @@
-@import 'variables';
-@import 'general';
-@import 'header';
-@import 'main';
-@import 'about-us';
-@import 'rooms';
-@import 'intro-video';
-@import 'footer';
+@import './general-variables/variables';
+@import './general-variables/general';
+@import './header-footer/header';
+@import './home/main';
+@import './home/about-us';
+@import './home/rooms';
+@import './home/intro-video';
+@import './home/facilities';
+@import './header-footer/footer';
