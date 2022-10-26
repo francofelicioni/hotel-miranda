@@ -53,3 +53,25 @@ $font-roboto: "Roboto", sans-serif;
   letter-spacing: 2.8px;
   padding: 1rem 2rem;
 }
+
+@mixin slider-dots {
+  bottom:0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  gap: 10px;
+}
+
+@mixin dot {
+    cursor: pointer;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: none;
+    background-color: $grey-dots;
+}
+
+@mixin active {
+      background-color: $beige-light;
+  }
