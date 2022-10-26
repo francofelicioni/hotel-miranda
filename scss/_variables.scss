@@ -7,35 +7,47 @@ $black-full: #000000;
 //Grey
 $grey-text: #777777;
 $grey-border: #858585;
-$grey-shadow: #8B8B8B;
+$grey-shadow: #8b8b8b;
 $grey-border-btns: #ffffff54;
 $grey-menu-dates: #686868;
 $grey-dark: #333333;
 
 //Clear
-$white: #FFFFFF;
-$white-footer: #F8F8F8;
-$beige-light: #BEAD8E;
-$beige-dark: #BDAC8D;
+$white: #ffffff;
+$white-footer: #f8f8f8;
+$beige-light: #bead8e;
+$beige-dark: #bdac8d;
 
 //Others
-$red-pale: #DE5777;
+$red-pale: #de5777;
 
 //Fonts
-$font-title: 'Old Standard TT', serif;
-$font-text: 'Archivo', sans-serif;
-$font-roboto: 'Roboto', sans-serif;
+$font-title: "Old Standard TT", serif;
+$font-text: "Archivo", sans-serif;
+$font-roboto: "Roboto", sans-serif;
 
 // Mixings
 // Generals
-@mixin flex-row-between-center () {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@mixin flex-row-between-center() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@mixin flex-column-center () {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@mixin flex-column-center() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin btn {
+  background: $beige-light;
+  font-family: $font-text;
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  padding: 1rem 2rem;
 }

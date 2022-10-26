@@ -1,0 +1,103 @@
+.about-us {
+  @include flex-column-center;
+  align-items: flex-start;
+  padding: 1rem;
+
+  h3 {
+    font-family: $font-text;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.813rem;
+    line-height: 18px;
+    text-align: left;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: $grey-text;
+    padding: 2rem 0.5rem;
+  }
+  h2 {
+    font-family: $font-title;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+    letter-spacing: -1.2px;
+    color: $black-text;
+    text-align: left;
+    padding: 0.5rem;
+  }
+  p {
+    font-family: $font-text;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875;
+    line-height: 1.5;
+    color: $grey-text;
+    padding: 1rem 0.5rem;
+  }
+  .btn {
+    @include btn;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 1rem 0.5rem;
+  }
+
+  .about-us__container {
+    @include flex-column-center;
+    padding: 2rem;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+    .about-us__container__description {
+      @include flex-column-center;
+      position: relative;
+      padding: 3rem 0 2rem 0;
+      gap: 1rem;
+      img {
+        padding: 0;
+        width: 68px;
+        height: 50px;
+      }
+      .team-icon {
+        position: absolute;
+        bottom: 106px;
+        left: 150px;
+        width: 100px;
+        height: 133px;
+        z-index: -1;   
+    }
+      h4 {
+        font-family: $font-title;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.875rem;
+        line-height: 30px;
+        letter-spacing: -0.9px;
+        color: $black-text;
+      }
+      p {
+        font-family: $font-roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875;
+        line-height: 1.375;
+        text-align: center;
+        color: $black-text;
+        padding: 0 2rem;
+      }
+
+      &--black {
+        background-color: $black;
+        padding: 3rem 0;
+
+        h4 {
+          color: $white;
+        }
+        p {
+          color: $white;
+        }
+      }
+    }
+  }
+}

@@ -18,7 +18,7 @@ body {
   align-items: center;
   width: 100%;
   height: 70px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
   padding: 0 1rem; }
   .header .header__container {
@@ -68,10 +68,11 @@ body {
   flex-direction: column;
   align-items: center;
   background: #333333;
-  color: #FFFFFF;
+  color: #ffffff;
   height: 531px;
   align-items: flex-start;
-  gap: 2rem; }
+  padding: 2rem 1rem;
+  gap: 1rem; }
   .main .main__container h2 {
     font-family: "Archivo", sans-serif;
     font-style: normal;
@@ -79,7 +80,7 @@ body {
     font-size: 0.8rem;
     line-height: 18px;
     letter-spacing: 2.8px;
-    padding: 2rem 4rem 2rem 1rem; }
+    padding: 2rem 4rem 0 1rem; }
   .main .main__container h1 {
     font-family: "Old Standard TT", serif;
     font-style: normal;
@@ -89,9 +90,9 @@ body {
     letter-spacing: -1.2px;
     padding: 1rem; }
   .main .main__container .btn {
-    background: #BEAD8E;
+    background: #bead8e;
     font-family: "Archivo", sans-serif;
-    color: #FFFFFF;
+    color: #ffffff;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 0.875rem;
@@ -105,54 +106,153 @@ body {
     padding: 1rem 4rem 1rem 1rem;
     gap: 1rem; }
     .main .main__container .btn-container .btn {
-      background: #BEAD8E;
+      background: #bead8e;
       font-family: "Archivo", sans-serif;
-      color: #FFFFFF;
+      color: #ffffff;
       font-weight: 700;
       text-transform: uppercase;
       font-size: 0.875rem;
       line-height: 15px;
       letter-spacing: 2.8px;
       padding: 1rem 2rem; }
-    .main .main__container .btn-container .btn-transparent {
-      background: transparent;
-      border: 2px solid #ffffff54; }
+      .main .main__container .btn-container .btn--transparent {
+        background: transparent;
+        border: 2px solid #ffffff54; }
+  .main .main__container--dates {
+    background: #222222;
+    height: 354px;
+    justify-content: space-around; }
+    .main .main__container--dates .main__container__date {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      align-items: flex-start;
+      width: 100%; }
+      .main .main__container--dates .main__container__date p {
+        padding-bottom: 1rem; }
+      .main .main__container--dates .main__container__date .date {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.8rem; }
+        .main .main__container--dates .main__container__date .date p {
+          font-family: "Roboto", sans-serif;
+          color: #686868;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.875rem;
+          line-height: 1rem;
+          padding-bottom: 0; }
+      .main .main__container--dates .main__container__date .line-divider {
+        content: "";
+        border-top: 1px solid #bead8e;
+        height: 2px;
+        width: 100%;
+        padding: 0;
+        margin: 20px auto 0 auto; }
+    .main .main__container--dates .btn {
+      margin: 0 0 2rem 0.8rem;
+      padding: 1.2rem 1rem; }
 
-.main .main__container--dates {
-  background: #222222;
-  height: 354px;
-  justify-content: space-around; }
-  .main .main__container--dates .main__container__date {
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+  padding: 1rem; }
+  .about-us h3 {
+    font-family: "Archivo", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.813rem;
+    line-height: 18px;
+    text-align: left;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #777777;
+    padding: 2rem 0.5rem; }
+  .about-us h2 {
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+    letter-spacing: -1.2px;
+    color: #111111;
+    text-align: left;
+    padding: 0.5rem; }
+  .about-us p {
+    font-family: "Archivo", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875;
+    line-height: 1.5;
+    color: #777777;
+    padding: 1rem 0.5rem; }
+  .about-us .btn {
+    background: #bead8e;
+    font-family: "Archivo", sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    padding: 1rem 2rem;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 1rem 0.5rem; }
+  .about-us .about-us__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
-    align-items: flex-start;
+    padding: 2rem;
     width: 100%; }
-    .main .main__container--dates .main__container__date p {
-      padding-bottom: 1rem; }
-    .main .main__container--dates .main__container__date .date {
+    .about-us .about-us__container img {
+      width: 100%; }
+    .about-us .about-us__container .about-us__container__description {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
-      gap: 0.8rem; }
-      .main .main__container--dates .main__container__date .date p {
-        font-family: "Roboto", sans-serif;
-        color: #686868;
+      position: relative;
+      padding: 3rem 0 2rem 0;
+      gap: 1rem; }
+      .about-us .about-us__container .about-us__container__description img {
+        padding: 0;
+        width: 68px;
+        height: 50px; }
+      .about-us .about-us__container .about-us__container__description .team-icon {
+        position: absolute;
+        bottom: 106px;
+        left: 150px;
+        width: 100px;
+        height: 133px;
+        z-index: -1; }
+      .about-us .about-us__container .about-us__container__description h4 {
+        font-family: "Old Standard TT", serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 0.875rem;
-        line-height: 1rem;
-        padding-bottom: 0; }
-    .main .main__container--dates .main__container__date .line-divider {
-      content: "";
-      border-top: 1px solid #BEAD8E;
-      height: 2px;
-      width: 100%;
-      padding: 0;
-      margin: 20px auto 0 auto; }
-  .main .main__container--dates .btn {
-    margin: 0 0 2rem .8rem; }
+        font-size: 1.875rem;
+        line-height: 30px;
+        letter-spacing: -0.9px;
+        color: #111111; }
+      .about-us .about-us__container .about-us__container__description p {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875;
+        line-height: 1.375;
+        text-align: center;
+        color: #111111;
+        padding: 0 2rem; }
+      .about-us .about-us__container .about-us__container__description--black {
+        background-color: #222222;
+        padding: 3rem 0; }
+        .about-us .about-us__container .about-us__container__description--black h4 {
+          color: #ffffff; }
+        .about-us .about-us__container .about-us__container__description--black p {
+          color: #ffffff; }
 
 .footer {
   display: flex;
@@ -160,7 +260,7 @@ body {
   align-items: center;
   align-items: flex-start;
   gap: 1.2rem;
-  background: #F8F8F8;
+  background: #f8f8f8;
   height: 94px;
   padding: 1rem 1.5rem; }
   .footer p {
