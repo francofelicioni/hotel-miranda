@@ -540,6 +540,26 @@ body {
     .menu .menu__container .menu__slider-dots .active {
       background-color: #bead8e; }
 
+.featured {
+  height: 1020px;
+  background: #222222; }
+  .featured .featured-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0; }
+    .featured .featured-container h5 {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3.75rem;
+      padding-top: 1rem;
+      color: white; }
+    .featured .featured-container span {
+      font-size: 1rem; }
+    .featured .featured-container p {
+      color: #999999; }
+
 .footer {
   gap: 1.2rem;
   background: #f8f8f8;
