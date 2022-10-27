@@ -1,0 +1,74 @@
+@media screen and (min-width: 1000px) {
+  .about-us {
+    @include flex-row-reverse;
+    justify-content: center;
+    padding: 5rem 2rem;
+    gap: 2rem;
+    // margin: 0 auto;
+
+    .about-us__container {
+      h3 {
+        font-size: 1rem;
+        line-height: 15px;
+        text-align: left;
+        padding: 1rem;
+      }
+      h2 {
+        font-size: 5rem;
+        line-height: 5.625rem;
+        letter-spacing: -2.4px;
+        padding: 1rem .5rem;
+      }
+      p {
+        font-family: $font-text;
+        line-height: 24px;
+        padding: 1rem 0 1rem 1rem;
+        max-width: 397px
+      }
+      .btn {
+        @include btn;
+        border: none;
+        width: 216px;
+        height: 60px;
+        padding: 1rem;
+        margin: 2rem 1rem;
+      }
+
+      &--rigth {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 4rem;
+        width: 30%;
+      }
+      
+      .about-us__container__item {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+
+        .about-us__container__img {
+          width: 270px;
+          height: 100%;
+        }
+
+        .about-us__container__item-description {
+          width: 270px;
+          height: 300px;
+
+          .team-icon {
+            bottom: 158px;
+            left: 119px;
+            width: 144px;
+            height: 105.83px;
+          }
+        }
+
+        &--row {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}
