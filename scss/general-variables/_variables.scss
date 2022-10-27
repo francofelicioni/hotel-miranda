@@ -6,11 +6,11 @@ $black-full: #000000;
 
 //Grey
 $grey-footer: #f8f8f8;
-$grey-intro-video: #C2C2C2;
+$grey-intro-video: #c2c2c2;
 $grey-text: #777777;
 $grey-border: #858585;
 $grey-shadow: #8b8b8b;
-$grey-dots: #EDEDED;
+$grey-dots: #ededed;
 $grey-border-btns: #ffffff54;
 $grey-menu-dates: #686868;
 $grey-dark: #333333;
@@ -20,9 +20,10 @@ $grey-features: #999999;
 $white: #ffffff;
 $beige-light: #bead8e;
 $beige-dark: #bdac8d;
-$white-footer: #E5E5E5;
+$white-footer: #e5e5e5;
 //Others
 $red-pale: #de5777;
+$brown-video: #AD9D82;
 
 //Fonts
 $font-title: "Old Standard TT", serif;
@@ -35,6 +36,11 @@ $font-roboto: "Roboto", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@mixin flex-row-reverse() {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 @mixin flex-column-center() {
@@ -53,10 +59,11 @@ $font-roboto: "Roboto", sans-serif;
   line-height: 15px;
   letter-spacing: 2.8px;
   padding: 1rem 2rem;
+  border: none;
 }
 
 @mixin slider-dots {
-  bottom:0;
+  bottom: 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -65,14 +72,14 @@ $font-roboto: "Roboto", sans-serif;
 }
 
 @mixin dot {
-    cursor: pointer;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    border: none;
-    background-color: $grey-dots;
+  cursor: pointer;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: none;
+  background-color: $grey-dots;
 }
 
 @mixin active {
-      background-color: $beige-light;
-  }
+  background-color: $beige-light;
+}
