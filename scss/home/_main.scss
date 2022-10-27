@@ -49,50 +49,54 @@
       }
     }
 
-    &--dates {
+    &--black {
       background: $black;
       height: 354px;
-  
-      .main__container__date {
+
+      .main-container-dates {
         @include flex-column-center;
         padding: 1rem;
         align-items: flex-start;
         width: 100%;
-  
-        p {
-          padding-bottom: 1rem;
-        }
-  
-        .date {
-          @include flex-row-between-center;
-          gap: 0.8rem;
-  
+
+        .main__container__date {
+          width: 100%;
+          padding-bottom: 2rem;
           p {
-            font-family: $font-roboto;
-            color: $grey-menu-dates;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 0.875rem;
-            line-height: 1rem;
-            padding-bottom: 0;
+            padding-bottom: 1rem;
+          }
+
+          .date {
+            @include flex-row-between-center;
+            justify-content: flex-start;
+            gap: 0.8rem;
+
+            p {
+              font-family: $font-roboto;
+              color: $grey-menu-dates;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 0.875rem;
+              line-height: 1rem;
+              padding-bottom: 0;
+            }
+          }
+
+          .line-divider {
+            content: "";
+            border-top: 1px solid $beige-light;
+            height: 2px;
+            width: 100%;
+            padding: 0;
+            margin: 20px auto 0 auto;
           }
         }
-  
-        .line-divider {
-          content: "";
-          border-top: 1px solid $beige-light;
-          height: 2px;
-          width: 100%;
-          padding: 0;
-          margin: 20px auto 0 auto;
-        }
       }
-  
+
       .btn {
-        margin: 1rem 2rem 0 1rem;
+        margin: 0 2rem 0 1rem;
         padding: 1.2rem 1rem;
       }
     }
-
   }
 }
