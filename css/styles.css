@@ -507,7 +507,7 @@ body {
       position: relative;
       height: 36px;
       width: 36px;
-      background: #f8f8f8; }
+      background: #E5E5E5; }
       .menu .menu__container .menu__navigation .navigation_item--rigth {
         background: #bead8e;
         box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.15); }
@@ -562,26 +562,123 @@ body {
 
 .footer {
   gap: 1.2rem;
-  background: #f8f8f8;
-  height: 94px;
-  padding: 1rem 1.5rem; }
-  .footer .footer__copyrigth {
-    padding-bottom: 1rem; }
-    .footer .footer__copyrigth p {
-      font-family: "Roboto", sans-serif;
-      font-weight: 700;
-      font-size: 1rem;
-      line-height: 1.188rem;
-      letter-spacing: -0.03rem;
-      color: #222222; }
-  .footer .footer__policies {
+  background: url(../../assets/icons/footer/background.svg); }
+  .footer .footer_logo {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
-    .footer .footer__policies a {
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem; }
+    .footer .footer_logo .sm-logo-container {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      background: #bead8e;
+      box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.15); }
+      .footer .footer_logo .sm-logo-container .sm-logo {
+        position: absolute;
+        bottom: 17px;
+        left: 25px;
+        color: #ffffff;
+        font-family: "Archivo", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 43px; }
+    .footer .footer_logo .lg-logo {
+      width: 120px; }
+  .footer .footer_description {
+    font-family: "Archivo", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625;
+    padding: 1rem;
+    color: #777777; }
+  .footer .social-icons__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 2rem;
+    gap: 1rem; }
+    .footer .social-icons__container .social-icon__logo--selected {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      background: #bead8e;
+      padding-right: 2rem; }
+      .footer .social-icons__container .social-icon__logo--selected .sm-logo__twitter {
+        position: absolute;
+        bottom: 8px;
+        left: 8px; }
+  .footer .footer_services h6 {
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 1rem; }
+  .footer .footer_services .footer__services__container {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start; }
+    .footer .footer_services .footer__services__container .services_item {
       font-family: "Roboto", sans-serif;
-      font-weight: 700;
+      font-style: normal;
+      font-weight: 400;
       font-size: 1rem;
-      line-height: 1.188rem;
-      letter-spacing: -0.03rem;
+      line-height: 3rem;
+      color: #777777; }
+  .footer .footer_contact-us h6 {
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: #222222;
+    padding: 0 1rem;
+    padding-top: 2rem; }
+  .footer .footer_contact-us .contact-us__container {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem; }
+    .footer .footer_contact-us .contact-us__container .information_container_item {
+      font-family: "Archivo", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
       color: #222222; }
+    .footer .footer_contact-us .contact-us__container .information_container_item-sm {
+      color: #777777;
+      padding-top: 2px; }
+  .footer .footer__copyrigth-policies {
+    background: #f8f8f8;
+    padding: 1rem; }
+    .footer .footer__copyrigth-policies .footer__copyrigth {
+      padding-bottom: 1rem; }
+      .footer .footer__copyrigth-policies .footer__copyrigth p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.188rem;
+        letter-spacing: -0.03rem;
+        color: #222222; }
+    .footer .footer__copyrigth-policies .footer__policies {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .footer .footer__copyrigth-policies .footer__policies a {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.188rem;
+        letter-spacing: -0.03rem;
+        color: #222222; }
