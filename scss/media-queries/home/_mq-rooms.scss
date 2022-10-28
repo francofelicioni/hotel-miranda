@@ -1,9 +1,7 @@
 @media screen and (min-width: 1000px) {
   .rooms {
     width: 100%;
-    h3 {
-    }
-
+   
     h2 {
       padding-bottom: 4rem;
       font-size: 5rem;
@@ -21,29 +19,22 @@
       height: 500px;
       display: flex;
       justify-content: center;
-    }
 
-    .menu__navigation {
-      left: 6%;
-      top: 50%;
-
-      //   .navigation__item {
-      //     &--rigth {
-      //     }
-      //   }
+      .menu__navigation {
+        left: 6%;
+        top: 50%;
+      }
     }
 
     .room__information {
       height: 190px;
-      width: 100vw;
-      position: relative;
+      width: 690px;
+      margin: 0 auto;
       .room__information__container {
         @include flex-row-between-center;
         align-items: flex-start;
         padding: 1.5rem 1rem;
-        max-width: 690px;
-        left: 32%;
-        top: -30%;
+        width: 690px;
         gap: 2rem;
 
         h4 {
