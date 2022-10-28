@@ -28,16 +28,16 @@
   }
 
   .menu__container {
-    .menu_li {
+    .menu__li {
       @include flex-row-between-center;
       padding: 1rem;
 
-      .menu_li_img {
+      .menu__li__img {
         width: 120px;
         height: 120px;
       }
 
-      .menu_li_info {
+      .menu__li__info {
         @include flex-column-center;
         align-items: flex-start;
         gap: 1rem;
@@ -50,7 +50,7 @@
           line-height: 1.5rem;
           letter-spacing: -0.72px;
           color: $black;
-          padding: 0 1rem;
+          padding: 0 1rem 0 2rem;
         }
 
         p {
@@ -60,7 +60,7 @@
           font-size: 0.875rem;
           line-height: 1.5rem;
           color: $black;
-          padding: 0 1rem;
+          padding: 0 1rem 0 2rem;
         }
       }
     }
@@ -70,7 +70,7 @@
       padding: 0 1rem;
       justify-content: flex-end;
       gap: 1rem;
-      .navigation_item {
+      .navigation__item {
         position: relative;
         height: 36px;
         width: 36px;
@@ -90,22 +90,26 @@
         }
       }
     }
-    .menu_img {
-      margin: 2rem 1rem 0 0;
-      height: 335px;
-      width: 100%;
-      padding: 1rem;
-    }
 
-    .menu__slider-dots {
-      @include slider-dots;
+    .slider {
       padding: 1rem;
-      .dot {
-        @include dot;
+
+      .menu__img {
+        margin: 2rem 1rem 0 0;
+        height: 335px;
+        width: 100%;
       }
 
-      .active {
-        @include active;
+      .menu__slider-dots {
+        @include slider-dots;
+        padding: 1rem;
+        .dot {
+          @include dot;
+        }
+
+        .active {
+          @include active;
+        }
       }
     }
   }
