@@ -7,7 +7,8 @@
       height: 700px;
       margin: 0 auto;
       align-items: flex-start;
-      padding: 150px 4rem 0 4rem;
+      padding:  0 4rem;
+      padding-top: 10%;
 
       h3 {
         font-family: $font-text;
@@ -23,7 +24,7 @@
         line-height: 8.125rem;
         letter-spacing: -3.6px;
         // max-width: 50%;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
       }
 
       .btn {
@@ -34,6 +35,7 @@
         @include flex-row-between-center;
         justify-content: center;
         gap: 2rem;
+        padding: 0 1rem;
       }
 
       &--black {
