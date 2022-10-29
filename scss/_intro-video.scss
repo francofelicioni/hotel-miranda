@@ -1,3 +1,57 @@
+.intro-video {
+  background: $black;
+
+  .intro-video__container {
+    h3 {
+      font-family: $font-text;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 0.875rem;
+      line-height: 15px;
+      text-align: center;
+      letter-spacing: 2.8px;
+      text-transform: uppercase;
+      color: $beige-dark;
+      text-align: left;
+      padding: 2rem 1rem;
+    }
+
+    h2 {
+      font-family: $font-title;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3.5rem;
+      line-height: 3.75rem;
+      letter-spacing: -1.2px;
+      color: $white;
+      padding: 0 3rem 0 1rem;
+    }
+
+    p {
+      font-family: "Archivo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: $grey-intro-video;
+      padding: 1rem 3rem 0 1rem;
+    }
+    .intro-video__item {
+      align-self: center;
+      padding: 1rem 1rem 0 1rem;
+    }
+
+    .btn {
+      @include btn;
+      margin: 2rem 3rem 3.5rem 1rem;
+    }
+  }
+
+  .intro-video__container--right {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .intro-video {
     position: relative;
@@ -63,3 +117,4 @@
     }
   }
 }
+

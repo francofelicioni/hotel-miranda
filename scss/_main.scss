@@ -1,3 +1,107 @@
+.main {
+  .main__container {
+    display: block;
+    background: $grey-dark;
+    color: $white;
+    height: 531px;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+    gap: 1rem;
+
+    h3 {
+      font-family: $font-text;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 0.8rem;
+      line-height: 18px;
+      letter-spacing: 2.8px;
+      padding: 2rem 4rem 0 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-family: $font-title;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3.5rem;
+      line-height: 60px;
+      letter-spacing: -1.2px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      @include btn;
+    }
+
+    .btn-container {
+      display: block;
+      padding: 1rem 4rem 1rem 1rem;
+
+      .btn {
+        @include btn;
+        margin-bottom: 1rem;
+
+        &--transparent {
+          background: transparent;
+          border: 2px solid $grey-border-btns;
+        }
+      }
+    }
+
+    &--black {
+      background: $black;
+      height: 354px;
+
+      .main-container-dates {
+        @include flex-column-center;
+        padding: 1rem;
+        align-items: flex-start;
+        width: 100%;
+
+        .main__container__date {
+          width: 100%;
+          padding-bottom: 2rem;
+          p {
+            padding-bottom: 1rem;
+          }
+
+          .date {
+            @include flex-row-between-center;
+            justify-content: flex-start;
+            gap: 0.8rem;
+
+            p {
+              font-family: $font-roboto;
+              color: $grey-menu-dates;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 0.875rem;
+              line-height: 1rem;
+              padding-bottom: 0;
+            }
+          }
+
+          .line-divider {
+            content: "";
+            border-top: 1px solid $beige-light;
+            height: 2px;
+            width: 100%;
+            padding: 0;
+            margin: 20px auto 0 auto;
+          }
+        }
+      }
+
+      .btn {
+        margin: 0 2rem 0 1rem;
+        padding: 1.2rem 1rem;
+      }
+    }
+  }
+}
+
+
 @media screen and (min-width: 1000px) {
   .main {
     background: $grey-dark;
