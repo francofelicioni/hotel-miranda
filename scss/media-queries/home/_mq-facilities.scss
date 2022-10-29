@@ -1,0 +1,78 @@
+@media screen and (min-width: 1000px) {
+  .facilities {
+    padding-top: 40px;
+    h2 {
+      font-size: 5rem;
+      line-height: 5rem;
+      letter-spacing: -2.4px;
+    }
+
+    .facilities_grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      margin: 0 auto;
+      width: 80%;
+      padding-top: 10%;
+
+      .facilities__item {
+        width: 370px;
+        height: 349px;
+        .facilities__icon {
+          position: absolute;
+          left: 36px;
+          bottom: 350px;
+        }
+
+        .facilities__icon--number {
+          position: absolute;
+          right: 20px;
+          bottom: 385px;
+        }
+
+        h4 {
+          font-family: $font-title;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.875rem;
+          line-height: 1.875rem;
+          letter-spacing: -0.9px;
+          color: $black;
+          padding: 2rem;
+          margin-top: 20px;
+        }
+
+        p {
+          font-family: $font-text;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.875rem;
+          line-height: 1.5rem;
+          color: $grey-text;
+          padding: 0 5rem 0rem 2rem;
+        }
+
+        .facilities__slider-dots {
+          @include slider-dots;
+
+          .dot {
+            @include dot;
+          }
+
+          .active {
+            @include active;
+          }
+
+          &--hidden {
+            display: none;
+          }
+        }
+
+        &--hidden {
+          display: block;
+        }
+      }
+    }
+  }
+}
