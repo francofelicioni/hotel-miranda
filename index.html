@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <div class="annoucement">
+      <p>We Make Your Feel Comfortable</p>
+    </div>
     <header class="header">
       <div class="header__container container-left">
         <div class="nav-bar">
@@ -55,16 +58,20 @@
         </div>
       </div>
       <div class="header__container container-right">
-        <img
-          class="icon"
-          src="./assets/icons/header/account.svg"
-          alt="Profile Icon"
-        />
-        <img
-          class="icon"
-          src="./assets/icons/header/search.svg"
-          alt="Search Icon"
-        />
+        <div class="icon-container">
+          <img
+            class="icon"
+            src="./assets/icons/header/account.svg"
+            alt="Profile Icon"
+          />
+        </div>
+        <div class="icon-container">
+          <img
+            class="icon"
+            src="./assets/icons/header/search.svg"
+            alt="Search Icon"
+          />
+        </div>
       </div>
     </header>
     <section class="main">
@@ -76,59 +83,73 @@
           <button class="btn btn--transparent">Learn more</button>
         </div>
       </div>
-      <div class="main__container main__container--dates">
-        <div class="main__container__date">
-          <p>Arribal Date</p>
-          <div class="date">
-            <img src="./assets/icons/home/calendar.svg" alt="Calendar Icon" />
-            <p>24th march 2020</p>
+      <div class="main__container main__container--black">
+        <div class="main-container-dates">
+          <div class="main__container__date">
+            <p>Arribal Date</p>
+            <div class="date">
+              <img src="./assets/icons/home/calendar.svg" alt="Calendar Icon" />
+              <p>24th march 2020</p>
+            </div>
+            <div class="line-divider"></div>
           </div>
-          <div class="line-divider"></div>
-        </div>
-        <div class="main__container__date">
-          <p>Departure Date</p>
-          <div class="date">
-            <img src="./assets/icons/home/calendar.svg" alt="Calendar Icon" />
-            <p>30th march 2020</p>
+          <div class="main__container__date">
+            <p>Departure Date</p>
+            <div class="date">
+              <img src="./assets/icons/home/calendar.svg" alt="Calendar Icon" />
+              <p>30th march 2020</p>
+            </div>
+            <div class="line-divider"></div>
           </div>
-          <div class="line-divider"></div>
         </div>
         <button class="btn">Check availability</button>
       </div>
     </section>
     <section class="about-us">
-      <h3>About Us</h3>
-      <h2>Discover Our Underground.</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-      <button class="btn">Book Now</button>
-      <div class="about-us__container">
-        <img src="./assets/images/home/7.png" alt="Hotel Staff" />
-        <div class="about-us__container__description">
-          <img src="./assets/icons/home/team.svg" />
-          <img class="team-icon" src="./assets/icons/home/team2.svg" />
-          <h4>Strong Team</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor.
-          </p>
-        </div>
+      <div class="about-us__container about-us__container--rigth">
+        <h3>About Us</h3>
+        <h2>Discover Our Underground.</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <button class="btn">Book Now</button>
       </div>
-      <div class="about-us__container">
-        <img src="./assets/images/home/4.png" alt="Luxury Room" />
-        <div
-          class="about-us__container__description about-us__container__description--black"
-        >
-          <img src="./assets/icons/home/calendar2.svg " />
-          <h4>Luxury Room</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor.
-          </p>
+      <div class="about-us__container about-us__container--left">
+        <div class="about-us__container__item">
+          <img
+            class="about-us__container__img"
+            src="./assets/images/home/7.png"
+            alt="Hotel Staff"
+          />
+          <div class="about-us__container__item-description">
+            <img src="./assets/icons/home/team.svg" />
+            <img class="team-icon" src="./assets/icons/home/team2.svg" />
+            <h4>Strong Team</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
+        </div>
+        <div class="about-us__container__item about-us__container__item--row">
+          <img
+            class="about-us__container__img"
+            src="./assets/images/home/4.png"
+            alt="Luxury Room"
+          />
+          <div
+            class="about-us__container__item-description about-us__container__item-description--black"
+          >
+            <img src="./assets/icons/home/calendar2.svg " />
+            <h4>Luxury Room</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -166,18 +187,28 @@
         />
       </div>
       <div class="slider">
-        <div class="slider__btns-container">
+        <!-- <div class="slider__btns-container">
           <div class="slider__item"></div>
           <div class="slider__item"></div>
+        </div> -->
+        <div class="menu__navigation">
+          <div class="navigation__item navigation__item--left">
+            <img src="./assets/icons/home/izq.svg" alt="Left arrow" />
+          </div>
+          <div class="navigation__item navigation__item--rigth">
+            <img src="./assets/icons/home/der.svg" alt="Right arrow" />
+          </div>
         </div>
       </div>
       <div class="room__information">
         <div class="room__information__container">
-          <h4>Minimal Duplex Room</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore.
-          </p>
+          <div>
+            <h4>Minimal Duplex Room</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+          </div>
           <p class="room__price">
             $345/ <span class="room__price--sm">Night</span>
           </p>
@@ -185,53 +216,155 @@
       </div>
     </section>
     <section class="intro-video">
-      <h3>Intro video</h3>
-      <h2>Meet With Our Luxury Place.</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat you have to understand this.
-      </p>
-      <div class="intro-video__item">
-        <iframe
-          width="100%"
-          height="270px"
-          src="https://www.youtube.com/embed/eAW1TNnjrzs"
-          title="Hotel Miranda Video"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+      <div class="intro-video__container">
+        <h3>Intro video</h3>
+        <h2>Meet With Our Luxury Place.</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat you have to understand this.
+        </p>
+        <div class="intro-video__item intro-video__item--hidden">
+          <iframe
+            width="100%"
+            height="270px"
+            src="https://www.youtube.com/embed/eAW1TNnjrzs"
+            title="Hotel Miranda Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <button class="btn">Book now</button>
       </div>
-      <button class="btn">Book now</button>
+      <div class="intro-video__container intro-video__container--right">
+        <div class="intro-video__item">
+          <iframe
+            width="100%"
+            height="270px"
+            src="https://www.youtube.com/embed/eAW1TNnjrzs"
+            title="Hotel Miranda Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
     </section>
     <section class="facilities">
       <h3>Facilities</h3>
       <h2>Core Features</h2>
-      <div class="facilities__container">
-        <img
-          class="facilities__icon--1"
-          src="./assets/icons/home/1.svg"
-          alt="Facilitie 1"
-        />
-        <img
-          class="facilities__icon"
-          src="./assets/icons/home/facilities.svg"
-          alt="Facilities"
-        />
-        <h4>Have High Rating</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna..
-        </p>
-        <div class="facilities__slider-dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+      <div class="facilities_grid">
+        <div class="facilities__item">
+          <img
+            class="facilities__icon--number"
+            src="./assets/icons/home/coreFeatures/numbers/1.svg"
+            alt="Facility 1"
+          />
+          <img
+            class="facilities__icon"
+            src="./assets/icons/home/coreFeatures/icons/1.svg"
+            alt="Facilities"
+          />
+          <h4>Have High Rating</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna..
+          </p>
+          <div class="facilities__slider-dots facilities__slider-dots--hidden">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+        <div class="facilities__item facilities__item--hidden">
+          <img
+            class="facilities__icon--number"
+            src="./assets/icons/home/coreFeatures/numbers/2.svg"
+            alt="Facility 2"
+          />
+          <img
+            class="facilities__icon"
+            src="./assets/icons/home/coreFeatures/icons/2.svg"
+            alt="Facilities"
+          />
+          <h4>Quiet Hours</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna..
+          </p>
+        </div>
+        <div class="facilities__item facilities__item--hidden">
+          <img
+            class="facilities__icon--number"
+            src="./assets/icons/home/coreFeatures/numbers/3.svg"
+            alt="Facility 3"
+          />
+          <img
+            class="facilities__icon"
+            src="./assets/icons/home/coreFeatures/icons/3.svg"
+            alt="Facilities"
+          />
+          <h4>Best Locations</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna..
+          </p>
+        </div>
+        <div class="facilities__item facilities__item--hidden">
+          <img
+            class="facilities__icon--number"
+            src="./assets/icons/home/coreFeatures/numbers/4.svg"
+            alt="Facility 4"
+          />
+          <img
+            class="facilities__icon"
+            src="./assets/icons/home/coreFeatures/icons/4.svg"
+            alt="Facilities"
+          />
+          <h4>Free Cancellation</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna..
+          </p>
+        </div>
+        <div class="facilities__item facilities__item--hidden">
+          <img
+            class="facilities__icon--number"
+            src="./assets/icons/home/coreFeatures/numbers/5.svg"
+            alt="Facility 5"
+          />
+          <img
+            class="facilities__icon"
+            src="./assets/icons/home/coreFeatures/icons/5.svg"
+            alt="Facilities"
+          />
+          <h4>Payment Options</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna..
+          </p>
+        </div>
+        <div class="facilities__item facilities__item--hidden">
+          <img
+            class="facilities__icon--number"
+            src="./assets/icons/home/coreFeatures/numbers/6.svg"
+            alt="Facility 6"
+          />
+          <img
+            class="facilities__icon"
+            src="./assets/icons/home/coreFeatures/icons/6.svg"
+            alt="Facilities"
+          />
+          <h4>Special Offers</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna..
+          </p>
         </div>
       </div>
     </section>
@@ -240,13 +373,13 @@
       <h3>Menu</h3>
       <h2>Our Foods Menu</h2>
       <div class="menu__container">
-        <li class="menu_li">
+        <li class="menu__li">
           <img
-            src="./assets/images/home/menu/3.jpg"
-            class="menu_li_img"
+            src="./assets/images/home/menu/1.jpg"
+            class="menu__li__img"
             alt="Eggs & Bacon"
           />
-          <div class="menu_li_info">
+          <div class="menu__li__info">
             <h4>Eggs & Bacon</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
@@ -254,13 +387,13 @@
             </p>
           </div>
         </li>
-        <li class="menu_li">
+        <li class="menu__li">
           <img
             src="./assets/images/home/menu/tea-coffee.jpg"
-            class="menu_li_img"
+            class="menu__li__img"
             alt="Tea or Coffee"
           />
-          <div class="menu_li_info">
+          <div class="menu__li__info">
             <h4>Tea or Coffee</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
@@ -268,13 +401,13 @@
             </p>
           </div>
         </li>
-        <li class="menu_li">
+        <li class="menu__li">
           <img
-            src="./assets/images/home/menu/chai.jpg"
-            class="menu_li_img"
+            src="./assets/images/home/menu/3.jpg"
+            class="menu__li__img"
             alt="Chia Oatmeal"
           />
-          <div class="menu_li_info">
+          <div class="menu__li__info">
             <h4>Chia Oatmeal</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
@@ -282,16 +415,60 @@
             </p>
           </div>
         </li>
+        <li class="menu__li menu__li--hidden">
+          <img
+            src="./assets/images/home/menu/5.jpg"
+            class="menu__li__img"
+            alt="Fruit Parfait"
+          />
+          <div class="menu__li__info">
+            <h4>Fruit Parfait</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
+        </li>
+        <li class="menu__li menu__li--hidden">
+          <img
+            src="./assets/images/home/menu/6.jpg"
+            class="menu__li__img"
+            alt="Marmalade Selection"
+          />
+          <div class="menu__li__info">
+            <h4>Marmalade Selection</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
+        </li>
+        <li class="menu__li menu__li--hidden">
+          <img
+            src="./assets/images/home/menu/7.jpg"
+            class="menu__li__img"
+            alt="heese Plate"
+          />
+          <div class="menu__li__info">
+            <h4>Cheese Plate</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
+        </li>
         <div class="menu__navigation">
-          <div class="navigation_item">
+          <div class="navigation__item">
             <img src="./assets/icons/home/izq.svg" alt="Left arrow" />
           </div>
-          <div class="navigation_item navigation_item--rigth">
+          <div class="navigation__item navigation__item--rigth">
             <img src="./assets/icons/home/der.svg" alt="Right arrow" />
           </div>
         </div>
+      </div>
+      <div class="slider">
         <img
-          class="menu_img"
+          class="menu__img"
           src="./assets/images/home/hotel-food.jpg"
           alt="Hotel Food"
         />
