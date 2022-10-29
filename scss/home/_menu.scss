@@ -3,7 +3,8 @@
   position: relative;
   .menu-icon {
     position: absolute;
-    right: 0;
+    width: 100px;
+    right: -33px;
     top: 0;
   }
   h3 {
@@ -65,6 +66,14 @@
       }
     }
 
+    .menu__container {
+      .menu__li {
+        &--hidden {
+          display: none;
+        }
+      }
+    }
+
     .menu__navigation {
       @include flex-row-between-center;
       padding: 0 1rem;
@@ -92,8 +101,10 @@
     }
 
     .slider {
-      padding: 1rem;
-
+      // padding: 1rem;
+      height: 335px;
+      width: 100%;
+      margin: 2rem 1rem 0 0;
       .menu__img {
         margin: 2rem 1rem 0 0;
         height: 335px;
@@ -112,5 +123,9 @@
         }
       }
     }
+  }
+
+  &--hidden {
+    display: none;
   }
 }
