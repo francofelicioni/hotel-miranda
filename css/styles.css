@@ -1085,119 +1085,125 @@ body {
   margin-top: 4rem;
   gap: 1.2rem;
   background: url(../../assets/icons/footer/background.svg); }
-  .footer .footer_logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
-    padding: 1rem; }
-    .footer .footer_logo .sm-logo-container {
-      position: relative;
-      width: 80px;
-      height: 80px;
-      background: #bead8e;
-      box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.15); }
-      .footer .footer_logo .sm-logo-container .sm-logo {
-        position: absolute;
-        bottom: 17px;
-        left: 25px;
-        color: #ffffff;
+  .footer .footer__container {
+    padding: 0 1rem; }
+    .footer .footer__container .footer__information {
+      display: block;
+      padding: 1rem; }
+      .footer .footer__container .footer__information .footer__information__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem; }
+        .footer .footer__container .footer__information .footer__information__logo .sm-logo-container {
+          position: relative;
+          width: 80px;
+          height: 80px;
+          background: #bead8e;
+          box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.15); }
+          .footer .footer__container .footer__information .footer__information__logo .sm-logo-container .sm-logo {
+            position: absolute;
+            bottom: 17px;
+            left: 25px;
+            color: #ffffff;
+            font-family: "Archivo", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2.5rem;
+            line-height: 43px; }
+        .footer .footer__container .footer__information .footer__information__logo .lg-logo {
+          width: 120px; }
+      .footer .footer__container .footer__information .footer__information__description {
         font-family: "Archivo", sans-serif;
         font-style: normal;
-        font-weight: 700;
-        font-size: 2.5rem;
-        line-height: 43px; }
-    .footer .footer_logo .lg-logo {
-      width: 120px; }
-  .footer .footer_description {
-    font-family: "Archivo", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.625;
-    padding: 1rem;
-    color: #777777; }
-  .footer .social-icons__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 1rem 2rem;
-    gap: 1rem; }
-    .footer .social-icons__container .social-icon__logo--selected {
-      position: relative;
-      width: 40px;
-      height: 40px;
-      background: #bead8e;
-      padding-right: 2rem; }
-      .footer .social-icons__container .social-icon__logo--selected .sm-logo__twitter {
-        position: absolute;
-        bottom: 8px;
-        left: 8px; }
-  .footer .footer_services h6 {
-    font-family: "Old Standard TT", serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    padding: 1rem; }
-  .footer .footer_services .footer__services__container {
-    padding: 0 2rem 0 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-items: flex-start; }
-    .footer .footer_services .footer__services__container .services_item {
-      font-family: "Roboto", sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 1rem;
-      line-height: 3rem;
-      color: #777777; }
-  .footer .footer_contact-us h6 {
-    font-family: "Old Standard TT", serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    color: #222222;
-    padding: 0 1rem;
-    padding-top: 2rem; }
-  .footer .footer_contact-us .contact-us__container {
-    padding: 2rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1rem; }
-    .footer .footer_contact-us .contact-us__container .information_container_item {
-      font-family: "Archivo", sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 1.25rem;
-      line-height: 1.5rem;
-      color: #222222; }
-    .footer .footer_contact-us .contact-us__container .information_container_item-sm {
-      color: #777777;
-      padding-top: 2px; }
-  .footer .footer__copyrigth-policies {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.625;
+        padding: 2rem 0;
+        color: #777777; }
+      .footer .footer__container .footer__information .social-icons__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 1rem;
+        gap: 1rem; }
+        .footer .footer__container .footer__information .social-icons__container .social-icon__item:hover {
+          position: relative;
+          width: 40px;
+          height: 40px;
+          padding-right: 2rem;
+          background: #bead8e; }
+          .footer .footer__container .footer__information .social-icons__container .social-icon__item:hover img {
+            background-color: white;
+            position: absolute;
+            bottom: 6px;
+            left: 5px;
+            width: 30px;
+            height: 30px;
+            z-index: 2; }
+    .footer .footer__container .footer__services {
+      padding-top: 1rem; }
+      .footer .footer__container .footer__services h6 {
+        font-family: "Old Standard TT", serif;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        padding: 1rem; }
+      .footer .footer__container .footer__services .footer__services__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem 0 1rem;
+        align-items: flex-start; }
+        .footer .footer__container .footer__services .footer__services__container p {
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 3rem;
+          color: #777777; }
+    .footer .footer__container .footer__contact-us {
+      padding: 2rem 0; }
+      .footer .footer__container .footer__contact-us h6 {
+        font-family: "Old Standard TT", serif;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        padding: 0 1rem; }
+      .footer .footer__container .footer__contact-us .contact-us__container {
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem; }
+        .footer .footer__container .footer__contact-us .contact-us__container .information__container__item {
+          font-family: "Archivo", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.25rem;
+          line-height: 1.5rem;
+          color: #222222; }
+        .footer .footer__container .footer__contact-us .contact-us__container .information__container__item-sm {
+          color: #777777;
+          padding-top: 2px; }
+  .footer .footer__copyright-policies {
     background: #f8f8f8;
     padding: 1rem; }
-    .footer .footer__copyrigth-policies .footer__copyrigth {
+    .footer .footer__copyright-policies .footer__copyright {
       padding-bottom: 1rem; }
-      .footer .footer__copyrigth-policies .footer__copyrigth p {
+      .footer .footer__copyright-policies .footer__copyright p {
         font-family: "Roboto", sans-serif;
         font-weight: 700;
         font-size: 1rem;
         line-height: 1.188rem;
         letter-spacing: -0.03rem;
         color: #222222; }
-    .footer .footer__copyrigth-policies .footer__policies {
+    .footer .footer__copyright-policies .footer__policies {
       display: flex;
       justify-content: space-between;
       align-items: center; }
-      .footer .footer__copyrigth-policies .footer__policies a {
+      .footer .footer__copyright-policies .footer__policies a {
         font-family: "Roboto", sans-serif;
         font-weight: 700;
         font-size: 1rem;
