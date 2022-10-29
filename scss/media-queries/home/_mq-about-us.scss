@@ -2,7 +2,7 @@
   .about-us {
     @include flex-row-reverse;
     justify-content: center;
-    padding: 5rem 2rem;
+    padding: 10% 0;
     gap: 2rem;
     // margin: 0 auto;
 
@@ -17,13 +17,14 @@
         font-size: 5rem;
         line-height: 5.625rem;
         letter-spacing: -2.4px;
-        padding: 1rem .5rem;
+        padding: 1rem 0.5rem;
+        max-width: 457px;
       }
       p {
         font-family: $font-text;
         line-height: 24px;
         padding: 1rem 0 1rem 1rem;
-        max-width: 397px
+        max-width: 397px;
       }
       .btn {
         @include btn;
@@ -42,7 +43,7 @@
         padding-top: 4rem;
         width: 30%;
       }
-      
+
       .about-us__container__item {
         display: flex;
         flex-direction: row-reverse;
