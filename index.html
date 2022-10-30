@@ -32,10 +32,10 @@
         <div class="nav-bar">
           <nav class="nav-bar__container">
             <ul class="nav-bar__ul">
-              <li><a class="ul__a" href="#why-us">About Us</a></li>
-              <li><a class="ul__a" href="#benefits">Rooms</a></li>
-              <li><a class="ul__a" href="#pricing">Offers</a></li>
-              <li><a class="ul__a" href="#contact">Contact</a></li>
+              <li><a href="#why-us">About Us</a></li>
+              <li><a href="#benefits">Rooms</a></li>
+              <li><a href="#pricing">Offers</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
           <label for="menu" class="nav-bar__burger-menu">
@@ -461,17 +461,29 @@
           <div class="navigation__item">
             <img src="./assets/icons/home/izq.svg" alt="Left arrow" />
           </div>
-          <div class="navigation__item navigation__item--rigth">
+          <div class="navigation__item">
             <img src="./assets/icons/home/der.svg" alt="Right arrow" />
           </div>
         </div>
       </div>
       <div class="slider">
-        <img
-          class="menu__img"
-          src="./assets/images/home/hotel-food.jpg"
-          alt="Hotel Food"
-        />
+        <div class="slider__container">
+          <img
+            class="slider__img"
+            src="./assets/images/home/hotel-food.jpg"
+            alt="Hotel Food"
+          />
+          <img
+            class="slider__img slider__img--hidden"
+            src="./assets/images/home/hotel-food.jpg"
+            alt="Hotel Food"
+          />
+          <img
+            class="slider__img slider__img--hidden"
+            src="./assets/images/home/hotel-food.jpg"
+            alt="Hotel Food"
+          />
+        </div>
         <div class="menu__slider-dots">
           <span class="dot"></span>
           <span class="dot active"></span>
@@ -496,7 +508,7 @@
         <p>Categories Served</p>
       </div>
       <div class="featured-container">
-        <img src="./assets/icons/home/rocket.svg" alt="Rocket Icon" />
+        <img src="./assets/icons/home/book.svg" alt="Rocket Icon" />
         <h5>100M<span>+</span></h5>
         <p>Idea Raised Funds</p>
       </div>
@@ -594,5 +606,6 @@
         </div>
       </div>
     </footer>
+    <script src="./scripts/scripts.js"></script>
   </body>
 </html>
