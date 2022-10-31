@@ -162,8 +162,10 @@
         gap: 2rem;
 
         .about-us__container__img {
+          background-color: $grey-background-img;
           width: 270px;
-          height: 100%;
+          height: 300px;
+          object-fit:cover;
         }
 
         .about-us__container__item-description {
