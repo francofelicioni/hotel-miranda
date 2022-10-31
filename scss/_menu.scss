@@ -1,11 +1,12 @@
 .menu {
   padding-top: 100px;
   position: relative;
+  padding: 1rem;
   .menu-icon {
     position: absolute;
     width: 100px;
     right: -33px;
-    top: 0;
+    top: -60px;
   }
   h3 {
     font-family: $font-text;
@@ -101,8 +102,6 @@
     padding-top: 50px;
     .slider__container {
       width: 335px;
-      // height: 335px;
-      // padding: 1rem;
       margin: 0 auto;
 
       .slider__img {
@@ -166,7 +165,7 @@
     .menu__container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      justify-items: center;
+      justify-items: stretch;
       position: relative;
       .menu__li {
         @include flex-row-between-center;
@@ -206,28 +205,20 @@
     }
 
     .slider {
-      padding: 4rem 0;
+      padding: 7.5rem 0;
 
       .slider__container {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         gap: 1.5rem;
-        
-      
 
         .slider__img {
           display: block;
-          
         }
       }
       .menu__slider-dots {
         display: none;
-      }
-
-      &:hover {
-        background: $beige-light;
-        box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.15);
       }
     }
   }
