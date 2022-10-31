@@ -93,8 +93,9 @@
       .footer__services__container {
         @include flex-row-between-center;
         justify-content: space-evenly;
-        padding: 0 2rem 0 1rem;
+        // padding: 0 2rem 0 1rem;
         align-items: flex-start;
+        gap: 2rem;
         p {
           font-family: $font-roboto;
           font-style: normal;
@@ -140,7 +141,7 @@
 
   .footer__copyright-policies {
     background: $grey-footer;
-    padding: 1rem;
+    padding: 1rem 2rem;
     .footer__copyright {
       padding-bottom: 1rem;
 
@@ -161,9 +162,14 @@
 @media screen and (min-width: 1000px) {
   .footer {
     .footer__container {
-      @include flex-row-between-center;
       width: 80%;
       margin: 0 auto;
+      padding: 3rem 0 2rem 0;
+      @include flex-row-between-center;
+      justify-content: space-evenly;
+      align-items: stretch;
+
+      // height: 100%;
 
       .footer__information {
         width: 25%;
@@ -171,10 +177,19 @@
 
       .footer__services {
         width: 30%;
-        height: 100%;
-         h6 {
-          text-align: center;
-         }
+        
+        display: block;
+        h6 {
+          text-align: left;
+        }
+
+        .footer__services__container {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: space-between;  
+          gap:2rem;
+        }
       }
 
       .footer__contact-us {
@@ -183,7 +198,6 @@
     }
 
     .footer__copyright-policies {
-
       @include flex-row-between-center;
       justify-content: center;
       align-items: center;
@@ -196,7 +210,7 @@
         width: 40%;
 
         p {
-            padding: 0;
+          padding: 0;
         }
       }
 
@@ -204,9 +218,6 @@
         width: 40%;
         justify-content: flex-end;
         gap: 1rem;
-        a {
-         
-        }
       }
     }
   }
