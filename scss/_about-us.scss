@@ -1,0 +1,189 @@
+.about-us {
+  display: block;
+  padding: 1rem;
+  margin: 0 auto;
+
+  .about-us__container {
+    h3 {
+      font-family: $font-text;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 0.813rem;
+      line-height: 18px;
+      text-align: left;
+      letter-spacing: 2.8px;
+      text-transform: uppercase;
+      color: $grey-text;
+      padding: 2rem 0.5rem;
+    }
+    h2 {
+      font-family: $font-title;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3.5rem;
+      line-height: 3.75rem;
+      letter-spacing: -1.2px;
+      color: $black-text;
+      text-align: left;
+      padding: 0.5rem;
+    }
+    p {
+      font-family: $font-text;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.875;
+      line-height: 1.5rem;
+      color: $grey-text;
+      padding: 1rem 0.5rem;
+    }
+    .btn {
+      @include btn;
+      border: none;
+      padding: 1rem 2rem;
+      margin: 1rem 0.5rem;
+    }
+
+    .about-us__container__item {
+      @include flex-column-center;
+      padding: 2rem;
+      width: 100%;
+      margin: 0 auto;
+
+      .about-us__container__img {
+        max-width: 100%;
+        // height: 300px;
+      }
+
+      .about-us__container__item-description {
+        @include flex-column-center;
+        position: relative;
+        padding: 3rem 0 2rem 0;
+        gap: 1rem;
+
+        img {
+          padding: 0;
+          width: 68px;
+          height: 50px;
+        }
+        .team-icon {
+          position: absolute;
+          bottom: 106px;
+          left: 150px;
+          width: 100px;
+          height: 133px;
+          z-index: -1;
+        }
+        h4 {
+          font-family: $font-title;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.875rem;
+          line-height: 30px;
+          letter-spacing: -0.9px;
+          color: $black-text;
+        }
+        p {
+          font-family: $font-roboto;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.875;
+          line-height: 1.375;
+          text-align: center;
+          color: $black-text;
+          padding: 0 2rem;
+        }
+
+        &--black {
+          background-color: $black;
+          padding: 3rem 0;
+
+          h4 {
+            color: $white;
+          }
+          p {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  .about-us {
+    @include flex-row-reverse;
+    justify-content: center;
+    padding: 10% 0;
+    gap: 2rem;
+    // margin: 0 auto;
+
+    .about-us__container {
+      h3 {
+        font-size: 1rem;
+        line-height: 15px;
+        text-align: left;
+        padding: 1rem;
+      }
+      h2 {
+        font-size: 5rem;
+        line-height: 5.625rem;
+        letter-spacing: -2.4px;
+        padding: 1rem 0.5rem;
+        max-width: 457px;
+      }
+      p {
+        font-family: $font-text;
+        line-height: 24px;
+        padding: 1rem 0 1rem 1rem;
+        max-width: 397px;
+      }
+      .btn {
+        @include btn;
+        border: none;
+        width: 216px;
+        height: 60px;
+        padding: 1rem;
+        margin: 2rem 1rem;
+      }
+
+      &--rigth {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 4rem;
+        width: 30%;
+      }
+
+      .about-us__container__item {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+
+        .about-us__container__img {
+          background-color: $grey-background-img;
+          width: 270px;
+          height: 300px;
+          object-fit:cover;
+        }
+
+        .about-us__container__item-description {
+          width: 270px;
+          height: 300px;
+
+          .team-icon {
+            bottom: 158px;
+            left: 119px;
+            width: 144px;
+            height: 105.83px;
+          }
+        }
+
+        &--row {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.featured {
+  background: $black;
+  .featured-container {
+    @include flex-column-center;
+    padding: 2rem 0;
+
+    h5 {
+      font-family: $font-roboto;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3.75rem;
+      padding-top: 1rem;
+      color: white;
+    }
+    span {
+      font-size: 1rem;
+    }
+    p {
+      color: $grey-features;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  .featured {
+    width: 80%;
+    padding: 1rem 2rem;
+    @include flex-row-between-center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    .featured-container {
+      // @include flex-column-center;
+      padding: 2rem 0;
+  
+      h5 {
+        font-family: $font-roboto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.75rem;
+        padding-top: 1rem;
+        color: white;
+      }
+      span {
+        font-size: 1rem;
+      }
+      p {
+        color: $grey-features;
+      }
+    }
+  }
+
+}
