@@ -38,43 +38,6 @@
     z-index: 2;
   }
 
-  .slider {
-    position: relative;
-    height: 244px;
-    background-color: $white-footer;
-  }
-
-  .menu__navigation {
-    @include flex-row-between-center;
-    padding: 0 1rem;
-    width: 90%;
-    position: absolute;
-    top: 90px;
-    left: 17px;
-
-    .navigation__item {
-      position: relative;
-      height: 36px;
-      width: 36px;
-      background: $white-footer;
-
-      &--left {
-        background: $white;
-      }
-      &--rigth {
-        background: $beige-light;
-      }
-
-      img {
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-        height: 1rem;
-        width: 1rem;
-      }
-    }
-  }
-
   .swiper {
     padding: 1rem 0;
     padding-bottom: 100px;
@@ -106,7 +69,6 @@
           .room__information__container {
             @include flex-column-center;
             align-items: flex-start;
-            // padding: 1.5rem 0;
             width: 330px;
             gap: 0;
             height: 215px;
@@ -162,15 +124,23 @@
     .swiper-button-container {
       position: relative;
       width: 365px;
-      .swiper-button-next {
+      .swiper-button-next--customized {
         position: absolute;
         top: -273px;
         right: -12px;
+        width: 52px;
+        height: 52px;
+        background: $beige-dark;
+        color: $white;
       }
-      .swiper-button-prev {
+      .swiper-button-prev--customized {
         position: absolute;
         top: -273px;
         left: 12px;
+        width: 52px;
+        height: 52px;
+        background: $white;
+        color: $black;
       }
     }
     .swiper-pagination {
@@ -256,17 +226,20 @@
 
       .swiper-button-container {
         position: relative;
-        width: 50%;
-        .swiper-button-next {
-          position: absolute;
-          top: -475px;
-          right: -460px;
+        width: 100%;
+        .swiper-button-prev--customized {
+          top: -490px;
+          margin-left: 14%;
+          width: 80px;
+          height: 80px;
         }
-        .swiper-button-prev {
-          // position: absolute;
-          top: -475px;
-          left: 460px;
+        .swiper-button-next--customized {
+          top: -490px;
+          margin-right: 17%;
+          width: 80px;
+          height: 80px;
         }
+       
       }
       .swiper-pagination {
         display: block;
