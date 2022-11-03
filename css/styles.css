@@ -563,34 +563,6 @@ body {
     align-self: center;
     box-shadow: 0px 8px 16px #8b8b8b;
     z-index: 2; }
-  .rooms .slider {
-    position: relative;
-    height: 244px;
-    background-color: #e5e5e5; }
-  .rooms .menu__navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
-    width: 90%;
-    position: absolute;
-    top: 90px;
-    left: 17px; }
-    .rooms .menu__navigation .navigation__item {
-      position: relative;
-      height: 36px;
-      width: 36px;
-      background: #e5e5e5; }
-      .rooms .menu__navigation .navigation__item--left {
-        background: #ffffff; }
-      .rooms .menu__navigation .navigation__item--rigth {
-        background: #bead8e; }
-      .rooms .menu__navigation .navigation__item img {
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-        height: 1rem;
-        width: 1rem; }
   .rooms .swiper {
     padding: 1rem 0;
     padding-bottom: 100px; }
@@ -665,14 +637,22 @@ body {
     .rooms .swiper .swiper-button-container {
       position: relative;
       width: 365px; }
-      .rooms .swiper .swiper-button-container .swiper-button-next {
+      .rooms .swiper .swiper-button-container .swiper-button-next--customized {
         position: absolute;
         top: -273px;
-        right: -12px; }
-      .rooms .swiper .swiper-button-container .swiper-button-prev {
+        right: -12px;
+        width: 52px;
+        height: 52px;
+        background: #bdac8d;
+        color: #ffffff; }
+      .rooms .swiper .swiper-button-container .swiper-button-prev--customized {
         position: absolute;
         top: -273px;
-        left: 12px; }
+        left: 12px;
+        width: 52px;
+        height: 52px;
+        background: #ffffff;
+        color: #222222; }
     .rooms .swiper .swiper-pagination {
       display: none; }
 
@@ -735,14 +715,17 @@ body {
                 padding: 0.5rem 2rem 0 0; }
       .rooms .swiper .swiper-button-container {
         position: relative;
-        width: 50%; }
-        .rooms .swiper .swiper-button-container .swiper-button-next {
-          position: absolute;
-          top: -475px;
-          right: -460px; }
-        .rooms .swiper .swiper-button-container .swiper-button-prev {
-          top: -475px;
-          left: 460px; }
+        width: 100%; }
+        .rooms .swiper .swiper-button-container .swiper-button-prev--customized {
+          top: -490px;
+          margin-left: 14%;
+          width: 80px;
+          height: 80px; }
+        .rooms .swiper .swiper-button-container .swiper-button-next--customized {
+          top: -490px;
+          margin-right: 17%;
+          width: 80px;
+          height: 80px; }
       .rooms .swiper .swiper-pagination {
         display: block; } }
 
@@ -810,8 +793,52 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      padding-left: 10%; }
+      align-items: flex-start; }
+      .intro-video .intro-video__container h2 {
+        font-size: 5rem;
+        line-height: 5.313rem;
+        letter-spacing: -2.4px;
+        max-width: 505px;
+        padding: 0;
+        padding-left: 1rem; }
+      .intro-video .intro-video__container p {
+        max-width: 485px; }
+      .intro-video .intro-video__container .intro-video__item--hidden {
+        display: none; }
+      .intro-video .intro-video__container--right {
+        width: 30%;
+        height: 700px;
+        background: #AD9D82;
+        position: absolute;
+        top: 0;
+        right: 0; }
+        .intro-video .intro-video__container--right .intro-video__item {
+          width: 420px;
+          height: 360px;
+          position: absolute;
+          top: 20%;
+          right: 20%; }
+          .intro-video .intro-video__container--right .intro-video__item iframe {
+            width: 420px;
+            height: 360px;
+            right: 190px;
+            z-index: 1; } }
+
+@media screen and (min-width: 1800px) {
+  .intro-video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    width: 100%; }
+    .intro-video .intro-video__container {
+      background: #222222;
+      width: 70%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
       .intro-video .intro-video__container h2 {
         font-size: 5rem;
         line-height: 5.313rem;
@@ -835,7 +862,7 @@ body {
           height: 460px;
           position: absolute;
           top: 15%;
-          right: 30%; }
+          right: 40%; }
           .intro-video .intro-video__container--right .intro-video__item iframe {
             width: 570px;
             height: 460px;
@@ -988,7 +1015,8 @@ body {
     position: absolute;
     width: 100px;
     right: -33px;
-    top: -60px; }
+    top: -60px;
+    overflow: hidden; }
   .menu h3 {
     font-family: "Archivo", sans-serif;
     font-style: normal;
@@ -1040,6 +1068,8 @@ body {
         padding: 0 1rem 0 2rem; }
     .menu .menu__container .menu__li--hidden {
       display: none; }
+    .menu .menu__container .menu__li .right-arrow-icon {
+      display: none; }
   .menu .menu__container .menu__navigation {
     display: flex;
     justify-content: space-between;
@@ -1058,9 +1088,13 @@ body {
         left: 10px;
         height: 1rem;
         width: 1rem; }
+      .menu .menu__container .menu__navigation .navigation__item .arrow__item--right {
+        transform: matrix(-1, 0, 0, 1, 0, 0); }
       .menu .menu__container .menu__navigation .navigation__item:hover {
         background: #bead8e;
         box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.15); }
+        .menu .menu__container .menu__navigation .navigation__item:hover img {
+          filter: invert(1); }
   .menu .slider {
     padding-top: 50px; }
     .menu .slider .slider__container {
@@ -1126,9 +1160,10 @@ body {
       .menu .menu__container .menu__li {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         align-items: flex-start;
-        padding: 1 rem; }
+        padding: 1rem;
+        align-items: center;
+        width: 90%; }
         .menu .menu__container .menu__li .menu__li__img {
           width: 120px;
           height: 120px; }
@@ -1139,10 +1174,18 @@ body {
           align-items: flex-start;
           gap: 1rem; }
           .menu .menu__container .menu__li .menu__li__info p {
-            padding: 0 1rem 0 2rem;
             width: 70%; }
         .menu .menu__container .menu__li--hidden {
           display: flex; }
+        .menu .menu__container .menu__li .right-arrow-icon {
+          display: none; }
+      .menu .menu__container .menu__li:hover {
+        background: #222222; }
+        .menu .menu__container .menu__li:hover h4, .menu .menu__container .menu__li:hover p {
+          color: #ffffff; }
+        .menu .menu__container .menu__li:hover .right-arrow-icon {
+          display: block;
+          cursor: pointer; }
       .menu .menu__container .menu__navigation {
         display: flex;
         justify-content: space-between;
@@ -1252,23 +1295,21 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        justify-content: space-evenly;
         justify-content: flex-start;
-        padding: 0 1rem;
-        gap: 1rem; }
-        .footer .footer__container .footer__information .social-icons__container .social-icon__item:hover {
-          position: relative;
+        gap: 0.5rem; }
+        .footer .footer__container .footer__information .social-icons__container .social-icon__item {
           width: 40px;
           height: 40px;
-          padding-right: 2rem;
-          background: #bead8e; }
-          .footer .footer__container .footer__information .social-icons__container .social-icon__item:hover img {
-            background-color: white;
+          position: relative;
+          transition: 0.5s; }
+          .footer .footer__container .footer__information .social-icons__container .social-icon__item img {
+            margin: auto;
             position: absolute;
-            bottom: 6px;
-            left: 5px;
-            width: 30px;
-            height: 30px;
-            z-index: 2; }
+            bottom: 7px;
+            left: 7px; }
+          .footer .footer__container .footer__information .social-icons__container .social-icon__item:hover {
+            background-color: #bead8e; }
     .footer .footer__container .footer__services {
       padding-top: 1rem; }
       .footer .footer__container .footer__services h6 {
