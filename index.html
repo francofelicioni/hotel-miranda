@@ -13,17 +13,17 @@
       name="keywords"
       content="Hotel Miranda, Hotel, Rooms to book, Hotel Miranda prices, Hotel Miranda services, Hotel Miranda Prices, Contact Hotel Miranda"
     />
-    <!-- Swiper JS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- Swiper JS -->
+    <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
     <!-- Styles.css import  -->
     <link rel="stylesheet" href="./css/styles.css" />
@@ -350,25 +350,11 @@
           </div>
         </div>
         <div class="swiper-button-container">
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next swiper-button-next--customized"></div>
+          <div class="swiper-button-prev swiper-button-prev--customized"></div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
-      <!-- <div class="room__information">
-        <div class="room__information__container">
-          <div>
-            <h4>Minimal Duplex Room</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore.
-            </p>
-          </div>
-          <p class="room__price">
-            $345/ <span class="room__price--sm">Night</span>
-          </p>
-        </div>
-      </div> -->
     </section>
     <section class="intro-video">
       <div class="intro-video__container">
@@ -394,7 +380,7 @@
         <button class="btn">Book now</button>
       </div>
       <div class="intro-video__container intro-video__container--right">
-        <div class="intro-video__item">
+        <div class="intro-video__item intro-video__item--responsive">
           <iframe
             width="100%"
             height="270px"
@@ -529,8 +515,6 @@
         src="./assets/icons/home/donut.svg"
         alt="Donut Icon"
       />
-      <!-- <div class="menu-icon">
-      </div> -->
       <h3>Menu</h3>
       <h2>Our Foods Menu</h2>
       <div class="menu__container">
@@ -547,6 +531,7 @@
               eiusmod tempor.
             </p>
           </div>
+          <img class="right-arrow-icon" src="./assets/icons/home/right_arrow.svg" alt="Rigth Arrow Icon" />
         </li>
         <li class="menu__li">
           <img
@@ -561,6 +546,7 @@
               eiusmod tempor.
             </p>
           </div>
+          <img class="right-arrow-icon" src="./assets/icons/home/right_arrow.svg" alt="Rigth Arrow Icon" />
         </li>
         <li class="menu__li">
           <img
@@ -575,6 +561,7 @@
               eiusmod tempor.
             </p>
           </div>
+          <img class="right-arrow-icon" src="./assets/icons/home/right_arrow.svg" alt="Rigth Arrow Icon" />
         </li>
         <li class="menu__li menu__li--hidden">
           <img
@@ -589,6 +576,7 @@
               eiusmod tempor.
             </p>
           </div>
+          <img class="right-arrow-icon" src="./assets/icons/home/right_arrow.svg" alt="Rigth Arrow Icon" />
         </li>
         <li class="menu__li menu__li--hidden">
           <img
@@ -603,6 +591,7 @@
               eiusmod tempor.
             </p>
           </div>
+          <img class="right-arrow-icon" src="./assets/icons/home/right_arrow.svg" alt="Rigth Arrow Icon" />
         </li>
         <li class="menu__li menu__li--hidden">
           <img
@@ -617,13 +606,14 @@
               eiusmod tempor.
             </p>
           </div>
+          <img class="right-arrow-icon" src="./assets/icons/home/right_arrow.svg" alt="Rigth Arrow Icon" />
         </li>
         <div class="menu__navigation">
           <div class="navigation__item">
             <img src="./assets/icons/home/izq.svg" alt="Left arrow" />
           </div>
-          <div class="navigation__item">
-            <img src="./assets/icons/home/der.svg" alt="Right arrow" />
+          <div class="navigation__item ">
+            <img class="arrow__item--right" src="./assets/icons/home/izq.svg" alt="Right arrow" />
           </div>
         </div>
       </div>
@@ -693,21 +683,21 @@
             ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
           </p>
           <div class="social-icons__container">
-            <div class="social-icon__item">
+            <a class="social-icon__item">
               <img src="./assets/icons/footer/fb.svg" alt="Facebook logo" />
-            </div>
-            <div class="social-icon__item">
+            </a>
+            <a class="social-icon__item">
               <img src="./assets/icons/footer/be.svg" alt="Twitter logo" />
-            </div>
-            <div class="social-icon__item">
-              <img src="./assets/icons/footer/be.svg" alt="Bahance logo" />
-            </div>
-            <div class="social-icon__item">
+            </a>
+            <a class="social-icon__item">
+              <img src="./assets/icons/footer/tw.svg" alt="Bahance logo" />
+            </a>
+            <a class="social-icon__item">
               <img src="./assets/icons/footer/in.svg" alt="Linkedin logo" />
-            </div>
-            <div class="social-icon__item">
+            </a>
+            <a class="social-icon__item">
               <img src="./assets/icons/footer/yt.svg" alt="Youtube logo" />
-            </div>
+            </a>
           </div>
         </div>
         <div class="footer__services">
@@ -735,16 +725,16 @@
             <img src="./assets/icons/footer/phone.svg" alt="Phone logo" />
             <div class="contact-us_information-container">
               <p class="information__container__item">Phone Number</p>
-              <p class="information__container__item-sm">+987 876 765 76 577</p>
+              <a href='tel:987 876 765 76 577' class="information__container__item-sm">+987 876 765 76 577</a>
             </div>
           </div>
           <div class="contact-us__container">
             <img src="./assets/icons/footer/mail.svg" alt="Mail logo" />
             <div class="contact-us_information-container">
               <p class="information__container__item">E-mail</p>
-              <p class="information__container__item-sm">
+              <a href='mailto:contact@hotelmiranda.com' class="information__container__item-sm">
                 contact@hotelmiranda.com
-              </p>
+              </a>
             </div>
           </div>
           <div class="contact-us__container">
