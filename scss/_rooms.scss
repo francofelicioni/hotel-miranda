@@ -22,25 +22,97 @@
     text-align: center;
     letter-spacing: -1.2px;
     color: $black;
+    padding-bottom: 50px;
   }
 
   .room__facilities {
     @include flex-row-between-center;
     position: absolute;
-    height: 40px;
-    left: 58px;
-    top: 185px;
     justify-content: space-around;
-    width: 70%;
-    background: $white;
     align-self: center;
+    height: 40px;
+    width: 70%;
+    left: 15%;
+    top: 30%;
+    background: $white;
     box-shadow: 0px 8px 16px $grey-shadow;
     z-index: 2;
   }
 
+  // .swiper {
+  //   padding: 1rem 0;
+  //   padding-bottom: 100px;
+
+  //   .swiper-wrapper {
+  //     width: 375px;
+  //     height: 244px;
+  //     padding: 2rem 0;
+  //     padding-bottom: 150px;
+
+  //     .swiper-slide {
+  //       padding: 1rem;
+  //       position: relative;
+  //       // padding: 2rem 0 10rem 0;
+  //       width: 375px;
+  //       height: 244px;
+  //       margin: auto;
+  //       img {
+  //         width: 375px;
+  //         height: 244px;
+  //       }
+
+  //       .room__information__container {
+  //         position: absolute;
+  //         background: $white;
+  //         top: 500px;
+  //         left: 27%;
+  //         width: 335px;
+  //         height: 250px;
+
+  //         h4 {
+  //           font-family: $font-title;
+  //           text-align: center;
+  //           font-style: normal;
+  //           font-weight: 400;
+  //           font-size: 1.75rem;
+  //           line-height: 2.25rem;
+  //           letter-spacing: -1.2px;
+  //           color: $black;
+  //           padding: 1rem 0;
+  //         }
+  //         p {
+  //           font-family: $font-roboto;
+  //           font-style: normal;
+  //           font-weight: 400;
+  //           font-size: 14px;
+  //           line-height: 24px;
+  //           text-align: center;
+  //           color: $grey-text;
+  //           padding: 0 2rem;
+  //         }
+  //         .room__price {
+  //           display: flex;
+  //           justify-content: center;
+  //           align-items: center;
+  //           width: 100%;
+  //           font-family: $font-text;
+  //           font-style: normal;
+  //           font-weight: 700;
+  //           font-size: 2rem;
+  //           line-height: 2.688;
+  //           color: $beige-light;
+  //           text-align: center;
+  //         }
+
+  //         .room__price--sm {
+  //           font-size: 1rem;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
   .swiper {
-    padding: 1rem 0;
-    padding-bottom: 100px;
+    padding-bottom:22%;
     .swiper-wrapper {
       width: 375px;
       height: 244px;
@@ -54,6 +126,7 @@
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        width: 100%;
 
         img {
           height: 500px;
@@ -62,6 +135,7 @@
 
         .room__information {
           height: 250px;
+          // height: 100%;
           width: 370px;
           margin: 0 auto;
           background: $white;
@@ -69,7 +143,7 @@
           .room__information__container {
             @include flex-column-center;
             align-items: flex-start;
-            width: 330px;
+            // width: 330px;
             gap: 0;
             height: 215px;
             width: 90%;
@@ -123,22 +197,24 @@
 
     .swiper-button-container {
       position: relative;
-      width: 365px;
+      width: 100%;
       .swiper-button-next--customized {
         position: absolute;
-        top: -273px;
-        right: -12px;
         width: 52px;
+        top: -273px;
         height: 52px;
+        // right: 0px;
+        margin-right: 2rem;
         background: $beige-dark;
         color: $white;
       }
       .swiper-button-prev--customized {
         position: absolute;
-        top: -273px;
-        left: 12px;
         width: 52px;
         height: 52px;
+        top: -273px;
+        // left: 0px;
+        margin-left: 2rem;
         background: $white;
         color: $black;
       }
@@ -163,86 +239,209 @@
 
     .room__facilities {
       left: 35%;
-      top: 20%;
+      top: 25%;
+      // top: 210px;
       width: 30%;
       z-index: 2;
     }
 
+    // .swiper-mobile {
+    //   display: none;
+    // }
+
+    // .swiper-desktop {
+    //   display: block;
+    // }
+
+    // .swiper {
+    //   padding: 1rem 0;
+    //   .swiper-wrapper {
+    //     width: 770px;
+    //     height: 500px;
+    //     padding: 2rem 0;
+    //     padding-bottom: 220px;
+    //     .swiper-slide {
+    //       background: $white-footer;
+    //       background-size: cover;
+    //       display: flex;
+    //       flex-direction: column;
+    //       justify-content: center;
+    //       align-items: center;
+    //       margin: 0 auto;
+
+    //       img {
+    //         height: 500px;
+    //         width: 100%;
+    //       }
+
+    //       .room__information {
+    //         height: 300px;
+    //         width: 690px;
+    //         margin: 0 auto;
+    //         .room__information__container {
+    //           @include flex-row-between-center;
+    //           align-items: flex-start;
+    //           padding: 1.5rem 1rem;
+    //           width: 690px;
+    //           // gap: 0;
+
+    //           h4 {
+    //             font-size: 2.25rem;
+    //             line-height: 2.25rem;
+    //             padding: 0 1rem 1rem 1rem;
+    //             text-align: left;
+    //           }
+    //           p {
+    //             text-align: left;
+    //             padding: 0 1rem;
+    //           }
+    //           .room__price {
+    //             display: flex;
+    //             align-items: center;
+    //             font-size: 2.5rem;
+    //           }
+
+    //           .room__price--sm {
+    //             padding: 0.5rem 2rem 0 0;
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+
+    //   .swiper-button-container {
+    //     position: relative;
+    //     width: 100%;
+    //     .swiper-button-prev--customized {
+    //       top: -490px;
+    //       margin-left: 14%;
+    //       width: 80px;
+    //       height: 80px;
+    //     }
+    //     .swiper-button-next--customized {
+    //       top: -490px;
+    //       margin-right: 17%;
+    //       width: 80px;
+    //       height: 80px;
+    //     }
+    //   }
+    //   .swiper-pagination {
+    //     display: block;
+    //   }
+    // }
+
     .swiper {
-      padding: 1rem 0;
+      padding-bottom:10%;
       .swiper-wrapper {
-        width: 770px;
-        height: 500px;
-        padding: 2rem 0;
-        padding-bottom: 220px;
+        // width: 375px;
+        // height: 244px;
+        // padding: 2rem 0;
+        // padding-bottom: 150px;
         .swiper-slide {
-          background: $white-footer;
-          background-size: cover;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          margin: 0 auto;
-
+          // background: $white-footer;
+          // background-size: cover;
+          // display: flex;
+          // flex-direction: column;
+          // justify-content: center;
+          // align-items: center;
+          // margin: 0 auto;
+          // width: 100%;
+  
           img {
-            height: 500px;
-            width: 100%;
+            // height: 500px;
+            // width: 100%;
           }
-
+  
           .room__information {
-            height: 300px;
-            width: 690px;
-            margin: 0 auto;
+            // height: 250px;
+            // width: 370px;
+            // margin: 0 auto;
+            // background: $white;
+            // position: relative;
             .room__information__container {
-              @include flex-row-between-center;
-              align-items: flex-start;
-              padding: 1.5rem 1rem;
-              width: 690px;
+              // @include flex-column-center;
+              // align-items: flex-start;
               // gap: 0;
-
+              // height: 215px;
+              // width: 90%;
+              // background: $white;
+              // position: absolute;
+              // left: 20px;
+              // top: -28px;
+  
               h4 {
-                font-size: 2.25rem;
-                line-height: 2.25rem;
-                padding: 0 1rem 1rem 1rem;
-                text-align: left;
+                // font-family: $font-title;
+                // text-align: center;
+                // font-style: normal;
+                // font-weight: 400;
+                // font-size: 1.75rem;
+                // line-height: 2.25rem;
+                // letter-spacing: -1.2px;
+                // color: $black;
+                // padding: 1rem 0;
               }
               p {
-                text-align: left;
-                padding: 0 1rem;
+                // font-family: $font-roboto;
+                // font-style: normal;
+                // font-weight: 400;
+                // font-size: 1rem;
+                // line-height: 1.5rem;
+                // text-align: center;
+                // color: $grey-text;
+                // padding: 0 3rem;
               }
               .room__price {
-                display: flex;
-                align-items: center;
-                font-size: 2.5rem;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // width: 100%;
+                // font-family: $font-text;
+                // font-style: normal;
+                // font-weight: 700;
+                // font-size: 2rem;
+                // line-height: 2.688;
+                // color: $beige-light;
+                // text-align: center;
               }
-
+  
               .room__price--sm {
-                padding: 0.5rem 2rem 0 0;
+                // font-size: 1rem;
               }
             }
           }
         }
       }
-
+  
       .swiper-button-container {
         position: relative;
         width: 100%;
-        .swiper-button-prev--customized {
-          top: -490px;
-          margin-left: 14%;
-          width: 80px;
-          height: 80px;
-        }
         .swiper-button-next--customized {
-          top: -490px;
-          margin-right: 17%;
-          width: 80px;
-          height: 80px;
+          position: absolute;
+          width: 52px;
+          top: -273px;
+          height: 52px;
+          margin-right: 2rem;
+          background: $beige-dark;
+          color: $white;
         }
-       
+        .swiper-button-prev--customized {
+          position: absolute;
+          width: 52px;
+          height: 52px;
+          top: -273px;
+          margin-left: 2rem;
+          background: $white;
+          color: $black;
+        }
       }
+
+      //?
       .swiper-pagination {
-        display: block;
+        display: none;
+      }
+
+      .home__swiper__navigation {
+        display: none;
       }
     }
   }
