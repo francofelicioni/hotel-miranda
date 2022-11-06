@@ -8,7 +8,38 @@ burgerMenu.addEventListener("click", () => {
   burgerMenu.classList.toggle("animation");
 });
 
+// Pagination (Dots)
+var swiper = new Swiper(".home__swiper__pagination", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
 var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
+
+
+// Navigation (Arrows)
+var swiper = new Swiper(".rooms__swiper__navigation", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+var swiper = new Swiper(".home__swiper__navigation", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+// Coverflow - Rooms
+var swiper = new Swiper(".home__swiper__navigation-coverflow", {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
@@ -25,7 +56,6 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
