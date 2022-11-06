@@ -16,6 +16,7 @@ $grey-text: #777777;
 $grey-menu-dates: #686868;
 $grey-border-btns: #ffffff54;
 $grey-dark: #333333;
+$grey-facilities: #292929;
 
 //Clear
 $white: #ffffff;
@@ -83,4 +84,10 @@ $font-roboto: "Roboto", sans-serif;
 
 @mixin active {
   background-color: $beige-light;
+}
+
+@mixin mobile-xs {
+  @media screen and (max-width: 350px) {
+      @content;
+  }
 }
