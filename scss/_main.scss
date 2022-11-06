@@ -36,13 +36,15 @@
     }
 
     .btn-container {
-      display: block;
-      padding: 1rem 4rem 1rem 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 1rem;
 
       .btn {
         @include btn;
-        margin-bottom: 1rem;
-
+        margin-bottom: 1rem ;
         &--transparent {
           background: transparent;
           border: 2px solid $grey-border-btns;
@@ -139,8 +141,7 @@
       .btn-container {
         @include flex-row-between-center;
         justify-content: center;
-        gap: 2rem;
-        padding: 0 1rem;
+        gap: 1rem;
       }
 
       &--black {
