@@ -1,0 +1,115 @@
+.rooms-page-swiper {
+  width: 100%;
+  height: 100%;
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    .room-container {
+      position: relative;
+
+      .room__facilities {
+        left: 35%;
+        top: 25%;
+        // top: 210px;
+        width: 30%;
+        z-index: 2;
+         img {
+            height: 12px;
+            width: 12px;
+         }
+      }
+
+      img {
+        width: 350px;
+        height: 100%;
+      }
+      .room__information {
+        height: 250px;
+        // height: 100%;
+        width: 370px;
+        margin: 0 auto;
+        background: $white;
+        position: relative;
+        .room__information__container {
+          @include flex-column-center;
+          align-items: flex-start;
+          // width: 330px;
+          gap: 0;
+          height: 215px;
+          width: 90%;
+          background: $white;
+          position: absolute;
+          left: 20px;
+          top: -28px;
+
+          h4 {
+            font-family: $font-title;
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.75rem;
+            line-height: 2.25rem;
+            letter-spacing: -1.2px;
+            color: $black;
+            padding: 1rem 0;
+          }
+          p {
+            font-family: $font-roboto;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            text-align: center;
+            color: $grey-text;
+            padding: 0 3rem;
+          }
+          .room__price {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            font-family: $font-text;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.688;
+            color: $beige-light;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #007aff;
+  }
+}
