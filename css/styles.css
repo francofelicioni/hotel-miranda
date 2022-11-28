@@ -1044,9 +1044,9 @@ body {
           padding: 1rem 3rem 2rem 2rem; }
     .home-facilities .home__swiper__pagination {
       display: none; }
-  .facilities--about {
+  .about-facilities {
     padding: 3rem 0; }
-    .facilities--about .facilities_grid {
+    .about-facilities .facilities_grid {
       position: relative;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -1056,7 +1056,7 @@ body {
       justify-content: space-around;
       gap: 2rem;
       margin: auto; }
-      .facilities--about .facilities_grid .facilities__item {
+      .about-facilities .facilities_grid .facilities__item {
         width: 370px;
         height: 349px;
         background: #292929;
@@ -1064,15 +1064,15 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: flex-end; }
-        .facilities--about .facilities_grid .facilities__item .facilities__icon {
+        .about-facilities .facilities_grid .facilities__item .facilities__icon {
           position: absolute;
           left: 40px;
           bottom: 220px; }
-        .facilities--about .facilities_grid .facilities__item .facilities__icon--number {
+        .about-facilities .facilities_grid .facilities__item .facilities__icon--number {
           position: absolute;
           right: 0px;
           top: 0px; }
-        .facilities--about .facilities_grid .facilities__item h4 {
+        .about-facilities .facilities_grid .facilities__item h4 {
           font-family: "Old Standard TT", serif;
           font-style: normal;
           font-weight: 400;
@@ -1083,7 +1083,7 @@ body {
           padding: 1rem 2rem;
           margin-top: 20px;
           color: #ffffff; }
-        .facilities--about .facilities_grid .facilities__item p {
+        .about-facilities .facilities_grid .facilities__item p {
           font-family: "Archivo", sans-serif;
           font-style: normal;
           font-weight: 400;
@@ -1092,7 +1092,7 @@ body {
           color: #777777;
           color: #ffffff;
           padding: 1rem 3rem 2rem 2rem; }
-    .facilities--about .swiper {
+    .about-facilities .swiper {
       display: none; } }
 
 .menu {
@@ -1423,12 +1423,12 @@ body {
     .main .about__container .page-navigation .page-navitation__about {
       color: #bead8e; }
 
-.restaurant {
+.welcome {
   padding-top: 30px; }
-  .restaurant .intro-video__item {
+  .welcome .intro-video__item {
     padding: 1rem;
     background: #ffffff; }
-  .restaurant h3 {
+  .welcome h3 {
     font-family: "Old Standard TT", serif;
     font-weight: 400;
     font-size: 2rem;
@@ -1437,12 +1437,13 @@ body {
     letter-spacing: -1.16px;
     color: #222222;
     padding: 0 1.2rem; }
-  .restaurant .restaurant__icons {
+  .welcome .welcome__icons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    margin: 0 auto; }
-    .restaurant .restaurant__icons .restaurant__icons__item {
+    margin: 0 auto;
+    padding: 1rem 0; }
+    .welcome .welcome__icons .welcome__icons__item {
       width: 158px;
       height: 158px;
       display: flex;
@@ -1451,12 +1452,12 @@ body {
       justify-content: center;
       align-items: center;
       gap: 1rem; }
-      .restaurant .restaurant__icons .restaurant__icons__item .plane-icon {
+      .welcome .welcome__icons .welcome__icons__item .plane-icon {
         filter: brightness(55%) sepia(1); }
-      .restaurant .restaurant__icons .restaurant__icons__item img {
+      .welcome .welcome__icons .welcome__icons__item img {
         width: 59px;
         height: 51px; }
-      .restaurant .restaurant__icons .restaurant__icons__item p {
+      .welcome .welcome__icons .welcome__icons__item p {
         font-family: "Archivo", sans-serif;
         font-style: normal;
         font-weight: 700;
@@ -1466,26 +1467,26 @@ body {
         letter-spacing: 2.4px;
         text-transform: uppercase;
         color: #222222; }
-    .restaurant .restaurant__icons .restaurant__icons__item:hover {
+    .welcome .welcome__icons .welcome__icons__item:hover {
       background-color: #bead8e; }
-      .restaurant .restaurant__icons .restaurant__icons__item:hover img {
+      .welcome .welcome__icons .welcome__icons__item:hover img {
         filter: brightness(3%) invert(1); }
-      .restaurant .restaurant__icons .restaurant__icons__item:hover p {
+      .welcome .welcome__icons .welcome__icons__item:hover p {
         color: #ffffff; }
-    .restaurant .restaurant__icons .restaurant__icons__item--hidden {
+    .welcome .welcome__icons .welcome__icons__item--hidden {
       display: none; }
-  .restaurant .restaurant__information {
+  .welcome .restaurant__information {
     padding: 1rem; }
-    .restaurant .restaurant__information .restaurant__img {
+    .welcome .restaurant__information .restaurant__img {
       width: 295px;
       height: 232px;
       margin: auto; }
-      .restaurant .restaurant__information .restaurant__img img {
+      .welcome .restaurant__information .restaurant__img img {
         width: 295px;
         height: 232px; }
-    .restaurant .restaurant__information .restaurant__description {
+    .welcome .restaurant__information .restaurant__description {
       padding: 1rem; }
-      .restaurant .restaurant__information .restaurant__description h3 {
+      .welcome .restaurant__information .restaurant__description h3 {
         text-align: left;
         font-family: "Archivo", sans-serif;
         font-style: normal;
@@ -1496,7 +1497,7 @@ body {
         text-transform: uppercase;
         color: #777777;
         padding: 1.5rem 0 1.5rem 0.2rem; }
-      .restaurant .restaurant__information .restaurant__description h2 {
+      .welcome .restaurant__information .restaurant__description h2 {
         font-family: "Old Standard TT", serif;
         font-style: normal;
         font-weight: 400;
@@ -1504,7 +1505,7 @@ body {
         line-height: 49px;
         letter-spacing: -1.05px;
         color: #222222; }
-      .restaurant .restaurant__information .restaurant__description p {
+      .welcome .restaurant__information .restaurant__description p {
         font-family: "Archivo", sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -1512,7 +1513,7 @@ body {
         line-height: 24px;
         color: #777777;
         padding: 1rem 1rem 1rem 0; }
-      .restaurant .restaurant__information .restaurant__description button {
+      .welcome .restaurant__information .restaurant__description button {
         background: #bead8e;
         font-family: "Archivo", sans-serif;
         color: #ffffff;
@@ -1526,6 +1527,9 @@ body {
         border: none;
         padding: 1rem 2rem;
         margin: 1rem 0; }
+
+.about-facilities {
+  display: none; }
 
 .counter h3 {
   font-family: "Archivo", sans-serif;
@@ -1613,17 +1617,17 @@ body {
       letter-spacing: -2.16px; }
     .main .about__container .page-navigation {
       width: 200px; }
-  .restaurant {
+  .welcome {
     padding: 3rem 0; }
-    .restaurant .intro-video__item {
+    .welcome .intro-video__item {
       padding: 2rem 4rem;
       background: #ffffff;
       display: block;
       margin: 0 auto;
       width: 80%; }
-      .restaurant .intro-video__item iframe {
+      .welcome .intro-video__item iframe {
         height: 650px; }
-    .restaurant h3 {
+    .welcome h3 {
       font-size: 72px;
       line-height: 89px;
       text-align: center;
@@ -1631,45 +1635,45 @@ body {
       width: 60%;
       margin: 0 auto;
       padding-top: 2rem; }
-    .restaurant .restaurant__icons {
+    .welcome .welcome__icons {
       display: flex;
       justify-content: center; }
-      .restaurant .restaurant__icons .restaurant__icons__item--hidden {
+      .welcome .welcome__icons .welcome__icons__item--hidden {
         display: flex; }
-        .restaurant .restaurant__icons .restaurant__icons__item--hidden img {
+        .welcome .welcome__icons .welcome__icons__item--hidden img {
           filter: invert(1) z sepia(1) opacity(70%); }
-    .restaurant .restaurant__information {
+    .welcome .restaurant__information {
       display: flex;
       margin: 0 auto;
       width: 80%;
       gap: 1rem; }
-      .restaurant .restaurant__information .restaurant__img {
+      .welcome .restaurant__information .restaurant__img {
         display: flex;
         align-items: center;
         justify-content: flex-d;
         width: 530px;
         height: 420px; }
-        .restaurant .restaurant__information .restaurant__img img {
+        .welcome .restaurant__information .restaurant__img img {
           width: 530px;
           height: 420px; }
-      .restaurant .restaurant__information .restaurant__description {
+      .welcome .restaurant__information .restaurant__description {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         width: 50%;
         gap: 1rem; }
-        .restaurant .restaurant__information .restaurant__description h3 {
+        .welcome .restaurant__information .restaurant__description h3 {
           padding: 1rem 0;
           text-align: left;
           margin: 0; }
-        .restaurant .restaurant__information .restaurant__description h2 {
+        .welcome .restaurant__information .restaurant__description h2 {
           font-size: 48px;
           line-height: 59px;
           letter-spacing: -1.44px;
           max-width: 500px; }
-        .restaurant .restaurant__information .restaurant__description p {
+        .welcome .restaurant__information .restaurant__description p {
           max-width: 487px; }
-        .restaurant .restaurant__information .restaurant__description button {
+        .welcome .restaurant__information .restaurant__description button {
           background: #bead8e;
           font-family: "Archivo", sans-serif;
           color: #ffffff;
@@ -1683,6 +1687,10 @@ body {
           border: none;
           padding: 1rem 2rem;
           margin: 1rem 0; }
+  .about-facilities {
+    display: block; }
+  .mySwiper {
+    display: none; }
   .counter {
     padding-top: 4rem;
     width: 80%;
@@ -1721,6 +1729,101 @@ body {
       .counter .counter-img img {
         width: 470px;
         height: 400px; } }
+
+.rooms-page-swiper {
+  width: 100%;
+  height: 100%; }
+  .rooms-page-swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; }
+    .rooms-page-swiper .swiper-slide .room-container {
+      position: relative; }
+      .rooms-page-swiper .swiper-slide .room-container .room__facilities {
+        left: 35%;
+        top: 25%;
+        width: 30%;
+        z-index: 2; }
+        .rooms-page-swiper .swiper-slide .room-container .room__facilities img {
+          height: 12px;
+          width: 12px; }
+      .rooms-page-swiper .swiper-slide .room-container img {
+        width: 350px;
+        height: 100%; }
+      .rooms-page-swiper .swiper-slide .room-container .room__information {
+        height: 250px;
+        width: 370px;
+        margin: 0 auto;
+        background: #ffffff;
+        position: relative; }
+        .rooms-page-swiper .swiper-slide .room-container .room__information .room__information__container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          align-items: flex-start;
+          gap: 0;
+          height: 215px;
+          width: 90%;
+          background: #ffffff;
+          position: absolute;
+          left: 20px;
+          top: -28px; }
+          .rooms-page-swiper .swiper-slide .room-container .room__information .room__information__container h4 {
+            font-family: "Old Standard TT", serif;
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.75rem;
+            line-height: 2.25rem;
+            letter-spacing: -1.2px;
+            color: #222222;
+            padding: 1rem 0; }
+          .rooms-page-swiper .swiper-slide .room-container .room__information .room__information__container p {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            text-align: center;
+            color: #777777;
+            padding: 0 3rem; }
+          .rooms-page-swiper .swiper-slide .room-container .room__information .room__information__container .room__price {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            font-family: "Archivo", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.688;
+            color: #bead8e;
+            text-align: center; }
+  .rooms-page-swiper .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2); }
+  .rooms-page-swiper .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #007aff; }
 
 .footer {
   margin-top: 4rem;
