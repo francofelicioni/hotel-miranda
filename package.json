@@ -12,6 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/francofelicioni/hotel-miranda.git"
   },
+  "type": "module",
   "author": "Franco Felicioni",
   "license": "ISC",
   "bugs": {
