@@ -66,7 +66,7 @@
   }
 }
 
-.restaurant {
+.welcome {
   padding-top: 30px;
   .intro-video__item {
     padding: 1rem;
@@ -84,14 +84,15 @@
     padding: 0 1.2rem;
   }
 
-  .restaurant__icons {
+  .welcome__icons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     // padding: 1rem;
     justify-items: center;
     margin: 0 auto;
+    padding: 1rem 0;
 
-    .restaurant__icons__item {
+    .welcome__icons__item {
       width: 158px;
       height: 158px;
       display: flex;
@@ -123,7 +124,7 @@
       }
     }
 
-    .restaurant__icons__item:hover {
+    .welcome__icons__item:hover {
       background-color: #bead8e;
 
       img {
@@ -135,10 +136,12 @@
       }
     }
 
-    .restaurant__icons__item--hidden {
+    .welcome__icons__item--hidden {
       display: none;
     }
   }
+
+
 
   .restaurant__information {
     padding: 1rem;
@@ -195,6 +198,10 @@
       }
     }
   }
+}
+
+.about-facilities{
+  display: none;
 }
 
 .counter {
@@ -309,7 +316,7 @@
     }
   }
 
-  .restaurant {
+  .welcome {
     padding: 3rem 0;
     .intro-video__item {
       padding: 2rem 4rem;
@@ -333,12 +340,12 @@
       padding-top: 2rem;
     }
 
-    .restaurant__icons {
+    .welcome__icons {
       display: flex;
       justify-content: center;
    
 
-      .restaurant__icons__item--hidden {
+      .welcome__icons__item--hidden {
         display: flex;
 
         img {
@@ -398,6 +405,15 @@
       }
     }
   }
+
+  .about-facilities {
+    display: block;
+  }
+
+  .mySwiper {
+    display: none;
+  }
+
 
   .counter {
     padding-top: 4rem;
