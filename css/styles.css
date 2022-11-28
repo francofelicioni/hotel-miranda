@@ -1411,7 +1411,7 @@ body {
     right: 0;
     bottom: 0;
     margin-right: 1.5rem; }
-    .main .about__container .page-navigation .page-navitation__home, .main .about__container .page-navigation .page-navitation__about,
+    .main .about__container .page-navigation .page-navitation__home, .main .about__container .page-navigation .page-navitation__about, .main .about__container .page-navigation .page-navitation__contact,
     .main .about__container .page-navigation p {
       font-family: "Archivo", sans-serif;
       font-style: normal;
@@ -1824,6 +1824,13 @@ body {
   .rooms-page-swiper .swiper-pagination-bullet-active {
     color: #fff;
     background: #007aff; }
+
+.page-navitation__contact {
+  color: #bead8e; }
+
+#map {
+  height: 400px;
+  width: 100%; }
 
 .footer {
   margin-top: 4rem;
