@@ -1,0 +1,9 @@
+.page-navitation__contact {
+    color: $beige-light;
+    @extend .page-navitation__home;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+  }
