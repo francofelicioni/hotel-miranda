@@ -25,9 +25,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <!-- Google Maps API -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <!-- Styles.css import  -->
     <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Import of Google Maps API js -->
+    <script type="module" src="../scripts/googleMapsAPI.js"></script>
   </head>
+
   <body>
     <div class="annoucement">
       <p>We Make Your Feel Comfortable</p>
@@ -95,12 +100,73 @@
         <div class="page-navigation">
           <a class="page-navitation__home" href="../index.html"> Home </a>
           <p>|</p>
-          <a class="page-navitation__contact" href="./contact-page.html"> Contact </a>
+          <a class="page-navitation__contact" href="./contact-page.html">
+            Contact
+          </a>
         </div>
       </div>
     </section>
 
+    <section class="contact__details">
+      <div class="detail__item">
+        <img
+          src="../assets/icons/contact/location.svg"
+          class="detail__item__icon"
+        />
+        <div class="detail__item__info">
+          <h3>Hotel Address</h3>
+          <h4>19/A, Cirikon City hall Tower New York, NYC</h4>
+        </div>
+      </div>
+      <div class="detail__item">
+        <img
+          src="../assets/icons/contact/phone.svg"
+          class="detail__item__icon"
+        />
+        <div class="detail__item__info">
+          <h3>Phone Number</h3>
+          <h4>+ 976 586 7578 644 7</h4>
+          <h4>+ 876 766 8675 765 6</h4>
+        </div>
+      </div>
+      <div class="detail__item">
+        <img
+          src="../assets/icons/contact/mail.svg"
+          class="detail__item__icon"
+        />
+        <div class="detail__item__info">
+          <h3>Email</h3>
+          <h4>info@webmail.com</h4>
+          <h4>jobs.webmail@mail.com</h4>
+        </div>
+      </div>
+    </section>
 
+    <!-- <form action="">
+      <div>
+        <img src="../assets/icons/contact/form-fullname.svg" class="contact__form__img" alt="Contact Form Image">
+        <input type="text" placeholder="Your full name">
+      </div>
+      <div>
+        <img src="../assets/icons/contact/form-phone.svg" class="contact__form__img" alt="Contact Form Image">
+        <input type="number" placeholder="Add phone number">
+      </div>
+      <div>
+        <img src="../assets/icons/contact/form-mail.svg" class="contact__form__img" alt="Contact Form Image">
+        <input type="email" placeholder="Enter email address">
+      </div>
+      <div>
+        <img src="../assets/icons/contact/form-subject.svg" class="contact__form__img" alt="Contact Form Image">
+        <input type="text" placeholder="Enter subject">
+      </div>
+      <div>
+        <img src="../assets/icons/contact/form-pen.svg" class="contact__form__img" alt="Contact Form Image">
+        <textarea placeholder="Enter message">
+      </div>
+      <button>SEND</button>
+    </form> -->
+    <div id="map"></div>
+    
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__information">
@@ -208,8 +274,6 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="./scripts/scripts.js"></script>
-    <script src="../scripts/pagination.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfN_i1GDsnjJ9_sNUMKi_KhSw4wqHTZZA&callback=initMap"></script>
   </body>
 </html>
