@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel Miranda | About</title>
+    <title>Hotel Miranda | Contact</title>
     <meta
       name="description="
       content="Welcome to the Hotel Miranda website. Get to know our hotel, book rooms, discover our offers, contact us and more!"
@@ -25,12 +25,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <!-- Google Maps API -->
+    <!-- Google Maps API resources-->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <!-- Styles.css import  -->
-    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
     <!-- Import of Google Maps API js -->
     <script type="module" src="../scripts/googleMapsAPI.js"></script>
+    <!-- Styles.css import  -->
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
 
   <body>
@@ -43,7 +44,7 @@
         <div class="nav-bar">
           <nav class="nav-bar__container">
             <ul class="nav-bar__ul">
-              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./about-page.html">About Us</a></li>
               <li><a href="./rooms-page.html">Rooms</a></li>
               <li><a href="#pricing">Offers</a></li>
               <li><a href="./contact-page.html">Contact</a></li>
@@ -165,8 +166,19 @@
       </div>
       <button>SEND</button>
     </form> -->
-    <div id="map"></div>
-    
+
+    <div id="container">
+      <div id="map"></div>
+      <div class="inputs__container">
+        <div>
+          <input id="address" type="textbox" value="Enter a location" />
+          <input type="button" id="location__button" value="Search" />
+        </div>
+        <div id="select__container"></div>
+      </div>
+      <div id="locations"></div>
+    </div>
+
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__information">
@@ -274,6 +286,12 @@
       </div>
     </footer>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfN_i1GDsnjJ9_sNUMKi_KhSw4wqHTZZA&callback=initMap"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- async -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfN_i1GDsnjJ9_sNUMKi_KhSw4wqHTZZA&callback=initMap&libraries=geometry"
+      defer
+    ></script>
   </body>
 </html>
