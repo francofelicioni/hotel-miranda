@@ -158,40 +158,25 @@
       </div>
     </section>
 
-    <!-- <form action="">
-      <div>
-        <img src="../assets/icons/contact/form-fullname.svg" class="contact__form__img" alt="Contact Form Image">
-        <input type="text" placeholder="Your full name">
-      </div>
-      <div>
-        <img src="../assets/icons/contact/form-phone.svg" class="contact__form__img" alt="Contact Form Image">
-        <input type="number" placeholder="Add phone number">
-      </div>
-      <div>
-        <img src="../assets/icons/contact/form-mail.svg" class="contact__form__img" alt="Contact Form Image">
-        <input type="email" placeholder="Enter email address">
-      </div>
-      <div>
-        <img src="../assets/icons/contact/form-subject.svg" class="contact__form__img" alt="Contact Form Image">
-        <input type="text" placeholder="Enter subject">
-      </div>
-      <div>
-        <img src="../assets/icons/contact/form-pen.svg" class="contact__form__img" alt="Contact Form Image">
-        <textarea placeholder="Enter message">
-      </div>
-      <button>SEND</button>
-    </form> -->
     <div id="container">
       <div id="map"></div>
       <div class="inputs__container">
         <div>
-          <p class="inputs__p">Or</p>
-          <input id="address" type="textbox" value="Enter any address" />
-          <input type="button" id="location__button" value="Search" />
+          <div class="input__adress">
+            <p class="inputs__p">Or</p>
+            <input
+              id="address"
+              type="textbox"
+              placeholder="Enter any address"
+            />
+          </div>
         </div>
         <div id="select__container">
-          <p>Select a Location:</p>
+          <p>Select a location:</p>
         </div>
+      </div>
+      <div class="location__button__container">
+        <input type="button" id="location__button" value="Search" />
       </div>
       <div id="locations"></div>
     </div>
@@ -254,7 +239,7 @@
         </div>
       </div>
       <div class="form__container form__container-column">
-        <div class="form__item">
+        <div class="form__item form__item-full">
           <img
             src="../assets/icons/contact/form-pen.svg"
             class="contact__form__img"
@@ -267,14 +252,13 @@
             required
           />
         </div>
-        <button class="form__button" type="button">SEND</button>
       </div>
+      <button class="form__button" type="button">SEND</button>
 
       <!-- <div>
         <img src="../assets/icons/contact/form-pen.svg" class="contact__form__img" alt="Message Icon">
         <textarea type="text" placeholder="Enter subject" required>
       </div> -->
-
     </form>
 
     <footer class="footer">
