@@ -118,6 +118,11 @@
           <h3>Hotel Address</h3>
           <h4>19/A, Cirikon City hall Tower New York, NYC</h4>
         </div>
+        <img
+          class="contact__list__number"
+          src="../assets/icons/home/coreFeatures/numbers/1.svg"
+          alt="Contact list number"
+        />
       </div>
       <div class="detail__item">
         <img
@@ -129,6 +134,11 @@
           <h4>+ 976 586 7578 644 7</h4>
           <h4>+ 876 766 8675 765 6</h4>
         </div>
+        <img
+          class="contact__list__number"
+          src="../assets/icons/home/coreFeatures/numbers/2.svg"
+          alt="Contact list number"
+        />
       </div>
       <div class="detail__item">
         <img
@@ -140,6 +150,11 @@
           <h4>info@webmail.com</h4>
           <h4>jobs.webmail@mail.com</h4>
         </div>
+        <img
+          class="contact__list__number"
+          src="../assets/icons/home/coreFeatures/numbers/3.svg"
+          alt="Contact list number"
+        />
       </div>
     </section>
 
@@ -166,18 +181,101 @@
       </div>
       <button>SEND</button>
     </form> -->
-
     <div id="container">
       <div id="map"></div>
       <div class="inputs__container">
         <div>
-          <input id="address" type="textbox" value="Enter a location" />
+          <p class="inputs__p">Or</p>
+          <input id="address" type="textbox" value="Enter any address" />
           <input type="button" id="location__button" value="Search" />
         </div>
-        <div id="select__container"></div>
+        <div id="select__container">
+          <p>Select a Location:</p>
+        </div>
       </div>
       <div id="locations"></div>
     </div>
+
+    <form class="form">
+      <div class="form__container">
+        <div class="form__item">
+          <img
+            src="../assets/icons/contact/form-fullname.svg"
+            class="contact__form__img"
+            alt="Full Name Icon"
+          />
+          <input
+            class="form__input"
+            type="text"
+            placeholder="Your full name"
+            required
+          />
+        </div>
+        <div class="form__item">
+          <img
+            src="../assets/icons/contact/form-phone.svg"
+            class="contact__form__img"
+            alt="Phone Icon"
+          />
+          <input
+            class="form__input"
+            type="number"
+            placeholder="Add phone number"
+            required
+          />
+        </div>
+      </div>
+      <div class="form__container">
+        <div class="form__item">
+          <img
+            src="../assets/icons/contact/form-mail.svg"
+            class="contact__form__img"
+            alt="Email Icon"
+          />
+          <input
+            class="form__input"
+            type="email"
+            placeholder="Enter email address"
+            required
+          />
+        </div>
+        <div class="form__item">
+          <img
+            src="../assets/icons/contact/form-subject.svg"
+            class="contact__form__img"
+            alt="Subject Icon"
+          />
+          <input
+            class="form__input"
+            type="text"
+            placeholder="Enter subject"
+            required
+          />
+        </div>
+      </div>
+      <div class="form__container form__container-column">
+        <div class="form__item">
+          <img
+            src="../assets/icons/contact/form-pen.svg"
+            class="contact__form__img"
+            alt="Message Icon"
+          />
+          <input
+            class="form__input"
+            type="text"
+            placeholder="Enter message"
+            required
+          />
+        </div>
+        <button class="form__button" type="button">SEND</button>
+      </div>
+
+      <!-- <div>
+        <img src="../assets/icons/contact/form-pen.svg" class="contact__form__img" alt="Message Icon">
+        <textarea type="text" placeholder="Enter subject" required>
+      </div> -->
+
+    </form>
 
     <footer class="footer">
       <div class="footer__container">
