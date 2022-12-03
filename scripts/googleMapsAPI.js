@@ -168,7 +168,6 @@ function initMap() {
     }
 
     let hotelsFiltered = getHotels();
-    // console.log(hotelsFiltered);
 
     map = new google.maps.Map(document.getElementById("map"), {
       zoom: hotelsFiltered? 5 : 4,

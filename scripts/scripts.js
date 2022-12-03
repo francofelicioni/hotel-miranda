@@ -14,7 +14,6 @@ let initialScroll = window.scrollY;
 window.addEventListener("scroll", function () {
   let newScroll = window.scrollY;
   let width = window.innerWidth;
-  console.log(width)
 
   if (width > 1000 && initialScroll >= newScroll) {
     document.getElementById("header").style.top = "40px";
