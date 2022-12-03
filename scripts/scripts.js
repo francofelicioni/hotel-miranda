@@ -8,6 +8,29 @@ burgerMenu.addEventListener("click", () => {
   burgerMenu.classList.toggle("animation");
 });
 
+// Header is hidden/shown when scrolled
+let initialScroll = window.scrollY;
+
+window.addEventListener("scroll", function () {
+  let newScroll = window.scrollY;
+  let width = window.innerWidth;
+  console.log(width)
+
+  if (width > 1000 && initialScroll >= newScroll) {
+    document.getElementById("header").style.top = "40px";
+  } else if (width > 1000 && initialScroll <= newScroll) {
+    document.getElementById("header").style.top = "-120px";
+  }
+
+  if (width < 1000 && initialScroll >= newScroll) {
+    document.getElementById("header").style.top = "0px";
+  } else if (width < 1000 && initialScroll <= newScroll) {
+    document.getElementById("header").style.top = "-120px";
+  }
+  
+  initialScroll = newScroll;
+});
+
 // Pagination (Dots)
 var swiper = new Swiper(".home__swiper__pagination", {
   pagination: {
@@ -20,8 +43,6 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
   },
 });
-
-
 
 // Navigation (Arrows)
 var swiper = new Swiper(".rooms__swiper__navigation", {
