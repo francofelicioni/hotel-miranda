@@ -649,7 +649,7 @@ body {
         width: 52px;
         top: -273px;
         height: 52px;
-        margin-right: 2rem;
+        margin-right: 10px;
         background: #bdac8d;
         color: #ffffff; }
       .rooms .swiper .swiper-button-container .swiper-button-prev--customized {
@@ -657,7 +657,7 @@ body {
         width: 52px;
         height: 52px;
         top: -273px;
-        margin-left: 2rem;
+        margin-left: 10px;
         background: #ffffff;
         color: #222222; }
     .rooms .swiper .swiper-pagination {
