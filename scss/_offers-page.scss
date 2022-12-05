@@ -1,0 +1,162 @@
+#page-navigation--offers {
+  width: 156px;
+}
+
+#title__price__container--offers {
+  .line__decoration {
+    display: none;
+  }
+  position: relative;
+  padding-top: 1rem;
+  h3,
+  h2 {
+    padding: 1rem 2rem;
+  }
+}
+
+#price__container--offers {
+  position: absolute;
+  top: -85px;
+  right: 45px;
+}
+
+#room__price--offers {
+  font-family: $font-text;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 25px;
+  text-align: right;
+  text-decoration-line: line-through;
+  color: #bead8e;
+  text-align: right;
+}
+
+#room__price--red {
+  color: #de5777;
+}
+
+.room__description-offers {
+  padding: 1rem 2rem;
+  font-family: $font-roboto;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+}
+
+#facilities__container--offers {
+  padding-bottom: 1rem;
+}
+
+.offer__btn {
+  @include btn;
+  width: 216px;
+  margin: 0 0 3rem 1rem;
+}
+
+#popular-list {
+  background: #222222;
+  padding: 2rem 0;
+
+  .popular-list-h4 {
+    font-family: $font-text;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: $beige-light;
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+    font-family: $font-title;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.8px;
+    color: $white;
+  }
+
+  .room-container {
+    background: $white;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #detail__container {
+    width: 80%;
+
+    #detail__img__container {
+      width: 100%;
+      height: auto;
+    }
+
+    #title__price__container--offers {
+      position: relative;
+      margin: 0 auto;
+      width: 90%;
+      height: 480px;
+      border-top: 6px solid $beige-light;
+
+      #line__decoration {
+        position: absolute;
+        top: 226px;
+        left: 63px;
+        border-top: 2px solid #ececec;
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      #price__container--offers {
+        position: absolute;
+        top: 115px;
+        right: 80px;
+      }
+
+      .title-description__container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        h2 {
+          width: 400px;
+        }
+
+        .room__description-offers {
+          padding: 2rem;
+          min-width: 450px;
+        }
+      }
+
+      #facilities__container--offers {
+        padding: 0;
+        margin-top: 15rem;
+
+        #facilities__grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 0 1rem;
+          li {
+            width: 200px;
+          }
+        }
+      }
+
+      .offer__btn {
+        position: absolute;
+        left: 40px;
+        bottom: -30px;
+      }
+    }
+  }
+
+  #popular-list {
+    width: 100%;
+
+    #rooms__responsive {
+      margin: 0 auto;
+      width: 90%;
+      padding-bottom: 2rem;
+    }
+  }
+}
