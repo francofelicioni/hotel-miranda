@@ -68,11 +68,12 @@
           }
 
           .date {
-            @include flex-row-between-center;
-            justify-content: flex-start;
-            gap: 0.8rem;
-
-            p {
+            input {
+              display: flex;
+              flex-direction: row-reverse;
+              gap: 0.8rem;
+              background: transparent;
+              border: none;
               font-family: $font-roboto;
               color: $grey-menu-dates;
               font-style: normal;
@@ -80,6 +81,7 @@
               font-size: 0.875rem;
               line-height: 1rem;
               padding-bottom: 0;
+              filter: invert(1);
             }
           }
 
