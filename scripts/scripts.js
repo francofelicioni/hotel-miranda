@@ -26,7 +26,7 @@ window.addEventListener("scroll", function () {
   } else if (width < 1000 && initialScroll <= newScroll) {
     document.getElementById("header").style.top = "-120px";
   }
-  
+
   initialScroll = newScroll;
 });
 
@@ -80,4 +80,18 @@ var swiper = new Swiper(".home__swiper__navigation-coverflow", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+// Check Availability Button
+
+let availability__button = document.getElementById(
+  "check-availability__button"
+);
+
+availability__button.addEventListener("click", () => {
+  Swal.fire(
+    '¡Thank you for your request!',
+    'We have received it correctly. Someone from our Team will get back to you very soon. The Miranda Hotel ',
+    'success'
+  )
 });
