@@ -820,7 +820,7 @@ body {
         padding-left: 1rem; }
       .intro-video .intro-video__container p {
         max-width: 485px; }
-      .intro-video .intro-video__container .intro-video__item--hidden {
+      .intro-video .intro-video__container .intro-video__item, .intro-video .intro-video__container .intro-video__item--hidden {
         display: none; }
       .intro-video .intro-video__container--right {
         width: 30%;
