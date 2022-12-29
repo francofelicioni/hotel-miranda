@@ -777,6 +777,9 @@ body {
         padding-left: 1rem; }
       .intro-video .intro-video__container p {
         max-width: 485px; }
+      .intro-video .intro-video__container .intro-video__item,
+      .intro-video .intro-video__container .intro-video__item--hidden {
+        display: none; }
       .intro-video .intro-video__container--right {
         width: 30%;
         height: 700px;
@@ -784,19 +787,21 @@ body {
         position: absolute;
         top: 0;
         right: 0; }
-        .intro-video .intro-video__container--right .intro-video__item {
+        .intro-video .intro-video__container--right .intro-video__item--right {
           width: 420px;
           height: 360px;
           position: absolute;
           top: 20%;
           right: 20%; }
-          .intro-video .intro-video__container--right .intro-video__item iframe {
+          .intro-video .intro-video__container--right .intro-video__item--right iframe {
             width: 420px;
             height: 360px;
             right: 190px;
-            z-index: 1; } }
+            z-index: 1; }
+    .intro-video .intro-video__container--right {
+      display: block; } }
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1600px) {
   .intro-video {
     position: relative;
     display: flex;
@@ -820,22 +825,19 @@ body {
         padding-left: 1rem; }
       .intro-video .intro-video__container p {
         max-width: 485px; }
-      .intro-video .intro-video__container .intro-video__item, .intro-video .intro-video__container .intro-video__item--hidden {
-        display: none; }
       .intro-video .intro-video__container--right {
         width: 30%;
         height: 700px;
         background: #AD9D82;
         position: absolute;
         top: 0;
-        right: 0; }
-        .intro-video .intro-video__container--right .intro-video__item {
-          width: 570px;
-          height: 460px;
+        right: 0;
+        display: block; }
+        .intro-video .intro-video__container--right .intro-video__item--right {
           position: absolute;
           top: 15%;
-          right: 40%; }
-          .intro-video .intro-video__container--right .intro-video__item iframe {
+          right: 60%; }
+          .intro-video .intro-video__container--right .intro-video__item--right iframe {
             width: 570px;
             height: 460px;
             right: 190px;
