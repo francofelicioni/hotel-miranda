@@ -1,0 +1,473 @@
+.main {
+  .about__container {
+    position: relative;
+    display: block;
+    background: $grey-dark;
+    color: $white;
+    align-items: flex-d;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    height: 265px;
+
+    h3 {
+      font-family: $font-text;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 0.813rem;
+      line-height: 18px;
+      text-align: left;
+      letter-spacing: 2.8px;
+      text-transform: uppercase;
+      color: $white;
+      padding: 2rem 0 1rem 0;
+    }
+    h2 {
+      font-family: $font-title;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3.5rem;
+      line-height: 3.75rem;
+      letter-spacing: -1.2px;
+      color: $black-text;
+      text-align: left;
+      padding-top: 0.5rem;
+      color: $white;
+    }
+
+    .page-navigation {
+      width: 156px;
+      height: 49px;
+      background: $white;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin-right: 1.5rem;
+
+      .page-navitation__home,
+      p {
+        font-family: $font-text;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 17px;
+        letter-spacing: -0.48px;
+        color: $black;
+      }
+
+      .page-navitation__about {
+        @extend .page-navitation__home;
+        color: $beige-light;
+      }
+    }
+  }
+}
+
+.welcome {
+  padding-top: 30px;
+  .intro-video__item {
+    padding: 1rem;
+    background: $white;
+  }
+
+  h3 {
+    font-family: $font-title;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -1.16px;
+    color: $black;
+    padding: 0 1.2rem;
+  }
+
+  .welcome__icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // padding: 1rem;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+
+    .welcome__icons__item {
+      width: 158px;
+      height: 158px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      .plane-icon {
+        filter: brightness(55%) sepia(1);
+      }
+
+      img {
+        width: 59px;
+        height: 51px;
+      }
+
+      p {
+        font-family: $font-text;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        color: $black;
+      }
+    }
+
+    .welcome__icons__item:hover {
+      background-color: #bead8e;
+
+      img {
+        filter: brightness(3%) invert(1);
+      }
+
+      p {
+        color: $white;
+      }
+    }
+
+    .welcome__icons__item--hidden {
+      display: none;
+    }
+  }
+
+  .restaurant__information {
+    padding: 1rem;
+    .restaurant__img {
+      width: 295px;
+      height: 232px;
+      margin: auto;
+
+      img {
+        width: 295px;
+        height: 232px;
+      }
+    }
+
+    .restaurant__description {
+      padding: 1rem;
+      h3 {
+        text-align: left;
+        font-family: $font-text;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 2.8px;
+        text-transform: uppercase;
+        color: $grey-text;
+        padding: 1.5rem 0 1.5rem 0.2rem;
+      }
+      h2 {
+        font-family: $font-title;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 49px;
+        letter-spacing: -1.05px;
+        color: $black;
+      }
+
+      p {
+        font-family: $font-text;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $grey-text;
+        padding: 1rem 1rem 1rem 0;
+      }
+
+      button {
+        @include btn;
+        border: none;
+        padding: 1rem 2rem;
+        margin: 1rem 0;
+      }
+    }
+  }
+}
+
+.about-facilities {
+  display: none;
+}
+
+.counter {
+  h3 {
+    font-family: $font-text;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: left;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: $grey-text;
+    padding: 2rem 0 2rem 1rem;
+  }
+  h2 {
+    font-family: $font-title;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: -1.2px;
+    color: $black-text;
+    text-align: left;
+    padding: 0 2rem 0 1rem;
+    color: $black;
+  }
+
+  .counter__container__facts {
+    padding: 0 1rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    .counter__container__item {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 3rem 0;
+
+      .item-description {
+        display: flex;
+        flex-direction: column;
+        // align-items: flex-start;
+        height: 80px;
+        width: 50%;
+
+        .item-title {
+          font-family: $font-title;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 60px;
+          line-height: 60px;
+          letter-spacing: -1.8px;
+          color: $black;
+        }
+
+        .item-detail {
+          font-family: $font-text;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 60px;
+          letter-spacing: 1px;
+          color: $grey-text;
+        }
+      }
+    }
+  }
+
+  .counter__images__container {
+    padding-top: 2rem;
+    height: 320px;
+    .counter__image {
+      display: block;
+      width: 335px;
+      height: 280px;
+      margin: auto;
+    }
+  }
+  .swiper-pagination-bullet {
+    background: #bead8e;
+  }
+
+  .counter-img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .main {
+    .about__container {
+      width: 80%;
+      padding-left: 15%;
+      height: 353px;
+
+      h3 {
+        font-size: 14px;
+        line-height: 15px;
+        padding-bottom: 2rem;
+      }
+
+      h2 {
+        font-size: 72px;
+        line-height: 72px;
+        letter-spacing: -2.16px;
+      }
+
+      .page-navigation {
+        width: 200px;
+      }
+    }
+  }
+
+  .welcome {
+    padding: 3rem 0;
+    .intro-video__item {
+      padding: 2rem 4rem;
+      background: $white;
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+
+      iframe {
+        height: 650px;
+      }
+    }
+
+    h3 {
+      font-size: 72px;
+      line-height: 89px;
+      text-align: center;
+      letter-spacing: -2.16px;
+      width: 60%;
+      margin: 0 auto;
+      padding-top: 2rem;
+    }
+
+    .welcome__icons {
+      display: flex;
+      justify-content: center;
+
+      .welcome__icons__item--hidden {
+        display: flex;
+
+        img {
+          filter: invert(1) z sepia(1) opacity(70%);
+        }
+      }
+    }
+
+    .restaurant__information {
+      display: flex;
+      margin: 0 auto;
+      width: 80%;
+      gap: 1rem;
+
+      .restaurant__img {
+        display: flex;
+        align-items: center;
+        justify-content: flex-d;
+        width: 530px;
+        height: 420px;
+
+        img {
+          width: 530px;
+          height: 420px;
+        }
+      }
+
+      .restaurant__description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+        gap: 1rem;
+        h3 {
+          padding: 1rem 0;
+          text-align: left;
+          margin: 0;
+        }
+
+        h2 {
+          font-size: 48px;
+          line-height: 59px;
+          letter-spacing: -1.44px;
+          max-width: 500px;
+        }
+
+        p {
+          max-width: 487px;
+        }
+
+        button {
+          @include btn;
+          border: none;
+          padding: 1rem 2rem;
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+
+  .about-facilities {
+    display: block;
+  }
+
+  .mySwiper {
+    display: none;
+  }
+
+  .counter {
+    padding-top: 4rem;
+    width: 80%;
+    margin: 0 auto;
+
+    h3 {
+      padding-left: 10%;
+    }
+    h2 {
+      padding-left: 10%;
+    }
+    .counter__container__facts {
+      flex-direction: row;
+      gap: 2rem;
+      justify-content: center;
+
+      .counter__container__item {
+        max-width: 370px;
+      }
+
+      .item-detail {
+        width: 370px;
+      }
+    }
+
+    .counter__images {
+      display: flex;
+      gap: 1rem;
+      margin: 0 auto;
+      padding: 2rem 0;
+
+      .counter__image--hidden {
+        display: block;
+      }
+
+      .counter__image {
+        padding: 2rem 0;
+        justify-content: center;
+        width: 350px;
+        height: 550px;
+      }
+    }
+
+    .swiper {
+      display: none;
+    }
+
+    .counter-img {
+      padding: 4rem 0 2rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+
+      img {
+        width: 470px;
+        height: 400px;
+      }
+    }
+  }
+}

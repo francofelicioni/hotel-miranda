@@ -1,0 +1,360 @@
+.home-facilities {
+  h3 {
+    font-family: $font-text;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 0.938rem;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: $grey-text;
+    text-align: center;
+    padding: 2rem;
+  }
+  h2 {
+    font-family: $font-title;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+    letter-spacing: -1.2px;
+    color: $black;
+    text-align: center;
+  }
+
+  .home__swiper__pagination {
+    margin: 1rem;
+    height: 460px;
+    .swiper-wrapper {
+      .facilities__card {
+        width: 335px;
+        height: 370px;
+        background-color: $white;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        padding: 2rem 0;
+        margin-top: 2rem;
+
+        .card__icons {
+          .facilities__card__icon {
+            position: absolute;
+            top: 80px;
+            left: 20px;
+          }
+
+          .facilities__card__icon--number {
+            position: absolute;
+            top: 25px;
+            right: 20px;
+            filter: invert(1) brightness(1.1);
+          }
+        }
+
+        .card__texts {
+          padding: 0 1.5rem;
+
+          h4 {
+            font-family: $font-title;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: -0.9px;
+            padding-bottom: 2rem;
+          }
+
+          p {
+            width: 250px;
+            height: 79.8px;
+            font-family: $font-text;
+            font-size: 14px;
+            line-height: 24px;
+            padding-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-pagination {
+    bottom: 15px;
+
+    .swiper-pagination-bullet {
+      background: $grey-dark;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: $beige-light;
+    }
+  }
+
+  .home-facilities__grid {
+    display: none;
+  }
+}
+
+.about-facilities {
+  background: $black;
+
+  h2,
+  h3 {
+    color: $white;
+  }
+
+  .facilities_grid {
+    display: none;
+  }
+
+  h3 {
+    font-family: $font-text;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 0.938rem;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: $grey-text;
+    text-align: center;
+    padding: 2rem;
+  }
+  h2 {
+    font-family: $font-title;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+    letter-spacing: -1.2px;
+    color: $white;
+    text-align: center;
+  }
+
+  .swiper {
+    margin: 1rem;
+    height: 460px;
+    .swiper-wrapper {
+      .facilities__card {
+        width: 335px;
+        height: 370px;
+        background-color: $grey-facilities;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        padding: 2rem 0;
+        margin-top: 2rem;
+
+        .card__icons {
+          .facilities__card__icon {
+            position: absolute;
+            top: 80px;
+            left: 20px;
+          }
+
+          .facilities__card__icon--number {
+            position: absolute;
+            top: 25px;
+            right: 20px;
+          }
+        }
+
+        .card__texts {
+          padding: 0 1.5rem;
+
+          h4 {
+            font-family: $font-title;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: -0.9px;
+            color: $white;
+            padding-bottom: 2rem;
+          }
+
+          p {
+            width: 250px;
+            height: 79.8px;
+            font-family: $font-text;
+            font-size: 14px;
+            line-height: 24px;
+            color: $white;
+            padding-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-pagination {
+    bottom: 15px;
+
+    .swiper-pagination-bullet {
+      background: $grey-dark;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: $beige-light;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .home-facilities {
+    padding: 40px 1rem 1rem 1rem;
+    h2 {
+      font-size: 5rem;
+      line-height: 5rem;
+      letter-spacing: -2.4px;
+    }
+
+    .home-facilities__swiper {
+      display: none;
+    }
+
+    .home-facilities__grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 60%;
+      padding-top: 80px;
+      justify-items: center;
+      justify-content: space-around;
+      gap: 2rem;
+      margin: auto;
+
+      .facilities__item {
+        width: 370px;
+        height: 349px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .facilities__icon {
+          position: absolute;
+          left: 40px;
+          bottom: 220px;
+        }
+
+        .facilities__icon--number {
+          position: absolute;
+          right: 0px;
+          top: 0px;
+        }
+
+        h4 {
+          font-family: $font-title;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.875rem;
+          line-height: 1.875rem;
+          letter-spacing: -0.9px;
+          color: $black;
+          padding: 1rem 2rem;
+          margin-top: 20px;
+        }
+
+        p {
+          font-family: $font-text;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.875rem;
+          line-height: 1.5rem;
+          color: $grey-text;
+          padding: 1rem 3rem 2rem 2rem;
+        }
+
+        &:hover {
+          .facilities__icon {
+            left: 45px;
+            bottom: 225px;
+          }
+
+          .facilities__icon--number {
+            right: 20px;
+            top: 30px;
+          }
+
+          h4 {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    .home__swiper__pagination {
+      display: none;
+    }
+  }
+
+  .about-facilities {
+    padding: 3rem 0;
+
+    .facilities_grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 60%;
+      padding-top: 80px;
+      justify-items: center;
+      justify-content: space-around;
+      gap: 2rem;
+      margin: auto;
+
+      .facilities__item {
+        width: 370px;
+        height: 349px;
+        background: $grey-facilities;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .facilities__icon {
+          position: absolute;
+          left: 40px;
+          bottom: 220px;
+        }
+
+        .facilities__icon--number {
+          position: absolute;
+          right: 0px;
+          top: 0px;
+        }
+
+        h4 {
+          font-family: $font-title;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.875rem;
+          line-height: 1.875rem;
+          letter-spacing: -0.9px;
+          color: $black;
+          padding: 1rem 2rem;
+          margin-top: 20px;
+          color: $white;
+        }
+
+        p {
+          font-family: $font-text;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.875rem;
+          line-height: 1.5rem;
+          color: $grey-text;
+          color: $white;
+          padding: 1rem 3rem 2rem 2rem;
+        }
+      }
+    }
+
+    .swiper {
+      display: none;
+    }
+  }
+}

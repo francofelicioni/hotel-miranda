@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Hotel Miranda, C. de Antonio López, Madrid",
+    "lat": 40.38865997178846,
+    "lng": -3.7004426603969485,
+    "ca": 12
+  },
+  {
+    "name": "Hotel Miranda, C. de Hermosilla, Madrid",
+    "lat": 40.426555445361565,
+    "lng": -3.6870277683126793,
+    "ca": 12
+  },
+  {
+    "name": "Hotel Miranda, Pl. de San Miguel, Madrid",
+    "lat": 40.41513096054279,
+    "lng": -3.7091660696388264,
+    "ca": 12
+  },
+  {
+    "name": "Hotel Miranda, C/ de Fernán González, Madrid",
+    "lat": 40.418919304802735,
+    "lng": -3.6748670181060437,
+    "ca": 12
+  },
+  {
+    "name": "Hotel Miranda, Calle de Jordán, Madrid",
+    "lat": 40.432749340369334,
+    "lng": -3.703154977511568,
+    "ca": 12
+  },
+  {
+    "name": "Hotel Miranda, C. de Julián Camarillo, Madrid",
+    "lat": 40.43871618114815,
+    "lng": -3.616721215520267,
+    "ca": 12
+  },
+  {
+    "name": "Hotel Miranda, C. del Divino Redentor, Madrid",
+    "lat": 40.467678607728715,
+    "lng": -3.701125003980637,
+    "ca": 12
+  },
+  {
+    "name": "Hotel Miranda, C. del Arroyo Belincoso, Madrid",
+    "lat": 40.41095797734031,
+    "lng": -3.651941457325015,
+    "ca": 12
+  },
+  {
+    "name": "Hotel Miranda, Av. Felipe II, Madrid",
+    "lat": 40.42350452892481,
+    "lng": -3.672197500298926,
+    "ca": 12
+  },
+  {
+    "name": "Hotel Miranda, Parque Anubis, Madrid",
+    "lat": 40.40559884128865,
+    "lng": -3.663271108479915,
+    "ca": 12
+  },
+  {
+    "name": "Hotel Miranda, Moncloa, Madrid",
+    "lat": 40.433958201412985,
+    "lng": -3.7187177337292177,
+    "ca": 12
+  },
+  {
+    "name": "Hotel Miranda, Plaza de Tetuán, Barcelona",
+    "lat": 41.394293908376596,
+    "lng": 2.1725217757299258,
+    "ca": 8
+  },
+  {
+    "name": "Hotel Miranda, C. de Venecia, Barcelona",
+    "lat": 41.3950021747266,
+    "lng": 2.1657411511750997,
+    "ca": 8
+  },
+  {
+    "name": "Hotel Miranda, C. de Pujades, Barcelona",
+    "lat": 41.398800926170054,
+    "lng": 2.1968118611605068,
+    "ca": 8
+  },
+  {
+    "name": "Hotel Miranda, C. de Ávila, Barcelona",
+    "lat": 41.3985433907152,
+    "lng": 2.1927778187038376,
+    "ca": 8
+  },
+  {
+    "name": "Hotel Miranda, C. del Consejo de Ciento, Barcelona",
+    "lat": 41.37638123797138,
+    "lng": 2.1454843745386825,
+    "ca": 8
+  },
+  {
+    "name": "Hotel Miranda, Palma de Mallorca, Mallorca",
+    "lat": 39.573115220646535,
+    "lng": 2.651495642802264,
+    "ca": 3
+  },
+  {
+    "name": "Hotel Miranda, Magaluf, Mallorca",
+    "lat": 39.50622590970123,
+    "lng": 2.5337332488549946,
+    "ca": 3
+  },
+  {
+    "name": "Hotel Miranda, Playa del Muro, Mallorca",
+    "lat": 39.81033854525753,
+    "lng": 3.1166206352899057,
+    "ca": 3
+  },
+  {
+    "name": "Hotel Miranda, C. Deán García Mota, Málaga",
+    "lat": 36.719547,
+    "lng": -4.416873,
+    "ca": 0
+  },
+  {
+    "name": "Hotel Miranda, Alameda de Capuchinos, Málaga",
+    "lat": 36.732777,
+    "lng": -4.416395,
+    "ca": 0
+  },
+  {
+    "name": "Hotel Miranda, Plaça de l'Ajuntament, Valencia",
+    "lat": 39.470667,
+    "lng": -0.37631,
+    "ca": 9
+  },
+  {
+    "name": "Hotel Miranda, C. Isabel de Villena, Valencia",
+    "lat": 39.479722,
+    "lng": -0.325712,
+    "ca": 9
+  },
+  {
+    "name": "Hotel Miranda, Av. de los Naranjos, Valencia",
+    "lat": 39.478811,
+    "lng": -0.341109,
+    "ca": 9
+  },
+  {
+    "name": "Hotel Miranda, El balneario, Tarifa",
+    "lat": 36.02186839745545,
+    "lng": -5.615692612687996,
+    "ca": 0
+  }
+]
